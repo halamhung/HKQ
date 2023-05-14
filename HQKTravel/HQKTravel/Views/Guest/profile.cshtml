@@ -1,0 +1,1187 @@
+﻿@model HQKTravel.Models.Guest_with_Account
+
+@{
+    ViewBag.Title = "profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="https://kit.fontawesome.com/5c6e471417.js" crossorigin="anonymous"></script>
+
+@using (Html.BeginForm())
+{
+
+    @Html.AntiForgeryToken()
+    <main role="main">
+        <div class="profile">
+            <div class="container">
+                <div class="row py-4">
+                    <div class="col-md-3 col-12 left">
+                        <div class="wrapper p-4">
+                            <div class="info d-flex align-items-center mb-md-3">
+                                <div class="image me-3">
+                                    <a href="#">
+                                        <img src="https://graph.facebook.com/2507534759423345/picture?type=normal&amp;width=500&amp;height=500" class="rounded-circle">
+                                    </a>
+                                </div>
+                                <div class="info-wrapper">
+                                    <div>
+                                        <h5 class="fw-bold">@Model.fullName</h5>
+                                        <small>@Model.Email</small>
+                                    </div>
+                                    <span id="toggle-profile-menu" class="d-lg-none"></span>
+                                </div>
+                            </div>
+                            <nav class="profile-links py-3">
+                                <ul id="accordion" class="accordion">
+                                    <li>
+                                        <div class="link"><i class="fa fa-database"></i> Tài khoản <i class="fa fa-chevron-down"></i></div>
+                                        <ul class="submenu">
+                                            <li>
+                                                <a href="#">Thông tin tài khoản</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Đổi mật khẩu</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ví</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Đăng xuất</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="link"><i class="fa fa-code"></i> Lịch sử <i class="fa fa-chevron-down"></i></div>
+                                        <ul class="submenu">
+                                            <li> <a href="#">phiếu đặt tour</a></li>
+                                            <li><a href="#">Tour đã hoàn thành</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="link"><i class="fa fa-mobile"></i> Yêu thích <i class="fa fa-chevron-down"></i></div>
+                                        <ul class="submenu">
+                                            <li><a href="#">Các tour yêu thích</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="link"><i class="fa fa-globe"></i> Giảm giá <i class="fa fa-chevron-down"></i></div>
+                                        <ul class="submenu">
+                                            <li><a href="#">Danh sách mã giảm</a></li>
+                                            <li><a href="#">Nhập mã giảm</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-12 right ps-md-4">
+                        <div class="wrapper p-md-4">
+
+                            <div class="heading">
+                                <h5 class="fw-bold">Thông tin cá nhân</h5>
+                                <p class="text-muted mb-4">
+                                    Cập nhật thông tin quý khách hàng
+                                </p>
+                            </div>
+                            <div class="row section-01">
+                                <div class="col-md-12 col-12 setting-wrap">
+
+                                    <div class="row setting-item">
+                                        <div class="col-md-3 col-12 setting-label">Họ và Tên</div>
+                                        <div class="col-md-9 col-12">
+                                            <div class="row">
+                                                <div class="col-12 col-md-12">
+                                                    <div class="display-form">
+                                                        <span>@Html.DisplayFor(Model => Model.fullName)</span>
+                                                        <a class="fw-bold text-underline toggle-edit-form">Chỉnh sửa</a>
+                                                    </div>
+                                                    <div class="edit-form">
+                                                        <div class="edit-form-wrapper">
+                                                            <div class="form-group">
+                                                                <label>Họ và Tên</label>
+                                                                <input class="form-control" id="Fullname" name="Fullname" placeholder="Nhập họ và tên" type="text" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <button class="btn btn-sm btn-secondary edit-form-submit" onclick="ChangeName()">
+                                                                Xong
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row setting-item">
+                                        <div class="col-md-3 col-12 setting-label">Điện thoại</div>
+                                        <div class="col-md-9 col-12">
+                                            <div class="row">
+                                                <div class="col-12 col-md-12">
+                                                    <div class="display-form">
+                                                        <span>@Html.DisplayFor(Model => Model.Phone)</span>
+                                                        <a class="fw-bold text-underline toggle-edit-form">Chỉnh sửa</a>
+                                                    </div>
+                                                    <div class="edit-form">
+                                                        <div class="edit-form-wrapper">
+                                                            <div class="form-group">
+                                                                <label>Họ và Tên</label>
+                                                                <input class="form-control" id="Phone" name="Phone" placeholder="Nhập số điện thoại" type="text" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <button class="btn btn-sm btn-secondary edit-form-submit" onclick="ChangeName()">
+                                                                Xong
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row setting-item">
+                                        <div class="col-md-3 col-12 setting-label">Email</div>
+                                        <div class="col-md-9 col-12">
+                                            <div class="row">
+                                                <div class="col-12 col-md-12">
+                                                    <div class="display-form">
+                                                        <span>@Html.DisplayFor(Model => Model.Email)</span>
+                                                        <a class="fw-bold text-underline toggle-edit-form">Chỉnh sửa</a>
+                                                    </div>
+                                                    <div class="edit-form">
+                                                        <div class="edit-form-wrapper">
+                                                            <div class="form-group">
+                                                                <label>Họ và Tên</label>
+                                                                <input class="form-control" id="email" name="email" placeholder="Nhập email" type="email" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <button class="btn btn-sm btn-secondary edit-form-submit" onclick="ChangeName()">
+                                                                Xong
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row setting-item">
+                                        <div class="col-md-3 col-12 setting-label">Ngày sinh</div>
+                                        <div class="col-md-9 col-12">
+                                            <div class="row">
+                                                <div class="col-12 col-md-12">
+                                                    <div class="display-form">
+                                                        <div class="display-form-content">
+                                                            <p>@Html.DisplayFor(Model => Model.Birthday)</p>
+                                                        </div>
+                                                        <a class="fw-bold text-underline toggle-edit-form">Chỉnh sửa</a>
+                                                    </div>
+                                                    <div class="edit-form">
+                                                        <div class="edit-form-wrapper">
+                                                            <div class="row">
+                                                                <div class="col-4">
+                                                                    <div class="form-group">
+                                                                        <label>Ngày</label>
+                                                                        <input type="text" id="birthDay" placeholder="DD" class="form-control" aria-describedby="birthDayBlock">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <div class="form-group">
+                                                                        <label>Tháng</label>
+                                                                        <input type="text" id="birthMonth" placeholder="MM" class="form-control" aria-describedby="birthMonthBlock">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <div class="form-group">
+                                                                        <label>Năm</label>
+                                                                        <input type="text" id="birthYear" placeholder="YYYY" class="form-control" aria-describedby="birthYearBlock">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <button class="btn btn-sm btn-secondary edit-form-submit" onclick="ChangeBirthDay()">
+                                                                Xong
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row setting-item">
+                                        <div class="col-md-3 col-12 setting-label">Địa chỉ</div>
+                                        <div class="col-md-9 col-12">
+                                            <div class="row">
+                                                <div class="col-12 col-md-12">
+                                                    <div class="display-form">
+                                                        <div class="display-form-content">
+                                                            <p>
+                                                                @Html.DisplayFor(Model => Model.Address)
+                                                            </p>
+                                                        </div>
+                                                        <a class="fw-bold text-underline toggle-edit-form">Chỉnh sửa</a>
+                                                    </div>
+                                                    <div class="edit-form">
+                                                        <div class="edit-form-wrapper">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label>Địa chỉ</label>
+                                                                        <input class="form-control" id="Address" name="Address" type="text" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <label>Tỉnh/TP</label>
+                                                                        <select class="form-select" id="ProvinceId" name="ProvinceId" onchange="GetDistrict(this)">
+                                                                            <option value="">Chọn tỉnh/tp</option>
+                                                                            <option value="5f451d79-fc4b-4569-b3d1-fa78adc187b3">An Giang</option>
+                                                                            <option value="332a5123-f3f8-4710-9526-140691edea17">Bà Rịa - Vũng Tàu</option>
+                                                                            <option value="bd1a0a88-7f78-4f62-bb3d-d09c095d2d6b">Bắc Cạn</option>
+                                                                            <option value="475866be-d734-4d0a-a54b-33ab97c2dc93">Bắc Giang</option>
+                                                                            <option value="b9ba5121-9916-4639-8e0e-33efd20bc01b">Bạc Liêu</option>
+                                                                            <option value="86e1a0a0-c8e7-4092-b042-747c49d3aaea">Bắc Ninh</option>
+                                                                            <option value="6e5896d0-8a42-4fa8-b4d9-a07e618fc2d3">Bảo Lộc</option>
+                                                                            <option value="85fae77b-f2b0-4037-9e0f-79a3393e70cf">Bến Tre</option>
+                                                                            <option value="20915c37-95a9-47b9-a796-02a74de556fc">Bình Định</option>
+                                                                            <option value="65e18960-d080-403a-8f30-aae7af47930a">Bình Dương</option>
+                                                                            <option value="682753d8-e985-4375-8fe6-18a1bb9dcb31">Bình Phước</option>
+                                                                            <option value="064844ef-5bc4-4b2a-9168-461a5ccbddeb">Bình Thuận</option>
+                                                                            <option value="b7ea1002-0ec5-4c88-be5d-3326408ad7e4">Cà Mau</option>
+                                                                            <option value="99faba2a-fcc5-4a00-b97f-67fa3bb5c4f4">Cần Thơ</option>
+                                                                            <option value="a11bf9f2-61e4-474e-bf64-fad0694581a4">Cần Thơ</option>
+                                                                            <option value="4f98446d-d69f-458b-b87f-c6b9db6a5d38">Cao Bằng</option>
+                                                                            <option value="7de7451c-22b2-4c51-aada-8883df39164b">Côn Đảo</option>
+                                                                            <option value="c704a1a3-be74-455a-b904-10c3c0ff3c3e">Đà Lạt</option>
+                                                                            <option value="5f4520e7-c63b-4c57-b417-d91091c2093a">Đà Nẵng</option>
+                                                                            <option value="27c6682f-c691-45e4-99b2-3c58ca24b5aa">Đắc Lắc</option>
+                                                                            <option value="5cc99b24-d2f9-4e38-8ee6-5b19159a4a3d">Đắc Nông</option>
+                                                                            <option value="77260d33-69e4-4d89-95fb-bc4c5e90b6f3">Đak Lak</option>
+                                                                            <option value="8bbe6159-4460-431f-9da1-bd7d1f29afc5">Điện Biên</option>
+                                                                            <option value="ac91dfcc-3b79-4f5f-8c91-9c64731acee5">Đồng Nai</option>
+                                                                            <option value="7ee6a48a-51fe-40ef-ab42-cbb693c73c0d">Đồng Tháp</option>
+                                                                            <option value="a6d7dba7-ee6c-4319-b068-cb019ee2faca">Gia Lai</option>
+                                                                            <option value="162ebfb2-bfd8-40a1-b170-cfdb192c8015">Hà Bắc</option>
+                                                                            <option value="cacc6309-2ba1-4997-b415-f89a184ff2e2">Hà Giang</option>
+                                                                            <option value="e1c0aaca-911e-4d79-aab5-3520002cad67">Hạ Long</option>
+                                                                            <option value="15ca14bc-e0fe-454e-82af-9157a8715b1f">Hà Nam</option>
+                                                                            <option value="c5fe8aff-4c66-4907-954d-a3d9577cfd09">Hà Nội</option>
+                                                                            <option value="3bbf16ad-5c91-41c4-879e-1660dae60ed8">Hà Tây</option>
+                                                                            <option value="9854121c-3454-4b7b-a8e4-dacde80ac6b0">Hà Tiên</option>
+                                                                            <option value="2ec66fe1-8de7-4c49-abc1-16ead51c4423">Hà Tĩnh</option>
+                                                                            <option value="615048b8-3ebb-4ea3-ab57-c120d961459b">Hải Dương</option>
+                                                                            <option value="30fd906d-bbb2-47a5-82bc-7c9d5684bb88">Hải Phòng</option>
+                                                                            <option value="64eb29e6-aed7-4876-aab0-93d157601062">HẬU GIANG</option>
+                                                                            <option value="76002619-5294-4ab4-a219-3be78868d550">Hoà Bình</option>
+                                                                            <option value="825ca4ef-452e-48ba-be6a-1ff11519db98">Huế</option>
+                                                                            <option value="d9efa23a-a991-4d37-9b07-a262c732df90">Hưng Yên</option>
+                                                                            <option value="b584f16c-8dd4-48b8-9164-0ae324380dd0">Khánh Hòa</option>
+                                                                            <option value="8137f0bf-8151-4fe3-809e-0fc4e91e3de7">Kiên Giang</option>
+                                                                            <option value="79fff2ae-c3df-4044-be83-284013477a07">Kom Tum</option>
+                                                                            <option value="ddb6abcc-8f5f-4443-8dcb-0a95453ed926">Lai Châu</option>
+                                                                            <option value="5588580e-8662-4598-b51e-9c1057bd065c">Lâm Đồng</option>
+                                                                            <option value="0d454c8b-70e2-4cb3-9a90-c88564d05508">Lạng Sơn</option>
+                                                                            <option value="fdfb5f4c-6919-4d81-9fd2-c56be90a57f4">Lào Cai</option>
+                                                                            <option value="50a18de1-c425-4874-a85f-bd23dc76a394">Long An</option>
+                                                                            <option value="0e1787bc-bdd6-4e14-a2d0-569abe01651f">Nam Định</option>
+                                                                            <option value="8e90a3bc-9d42-4f33-a2fc-33a9e218e814">Nghệ An</option>
+                                                                            <option value="05edcf1f-c950-4465-addc-10f6827ab752">Nha Trang</option>
+                                                                            <option value="2ba10470-dd7d-42ff-8e23-37430c19e801">Ninh Bình</option>
+                                                                            <option value="e68a2c40-095a-4cf3-a3ec-3c9c1af2de25">Ninh Thuận</option>
+                                                                            <option value="5c5837db-4eb6-4e44-a486-54d29d65d8dd">
+                                                                                Phan Thiết
+                                                                            </option>
+                                                                            <option value="80aaad72-03c8-449c-97ad-cfb26a1a215a">Phú Quốc</option>
+                                                                            <option value="60e66f73-241a-41ad-8b6b-3763ca9e0526">Phú Thọ</option>
+                                                                            <option value="5e4f05c1-d47a-4960-8c9d-d8e17b81b7d7">Phú Yên</option>
+                                                                            <option value="a51cccff-021d-4263-9aca-eb25d5bf0c16">Quảng Bình</option>
+                                                                            <option value="78327897-79b0-4226-8e9e-cf1288cfbde3">Quảng Nam</option>
+                                                                            <option value="6ca1ad59-801a-4a44-b0bf-f19051e70c82">Quảng Ngãi</option>
+                                                                            <option value="e0f8e055-aecd-4a3a-a22b-2bd236de12fe">Quảng Ninh</option>
+                                                                            <option value="64e253f2-391d-4eb6-95ea-7d18d3cc3cab">Quảng Trị</option>
+                                                                            <option value="4506c020-f5ff-4357-89d2-0d1d6cfc98b7">Quy Nhơn</option>
+                                                                            <option value="aafe978d-81da-463a-ae08-fe79ce33be67">Rạch Giá</option>
+                                                                            <option value="a8ca2519-c622-4eb1-84ae-ec7aa608df3a">Sapa</option>
+                                                                            <option value="7f8f443e-9f45-42c5-9aec-1a0272b0264b">Sóc Trăng</option>
+                                                                            <option value="d1e70950-fb48-459a-9a56-956073ee8bfa">Sơn La</option>
+                                                                            <option value="cca87935-5033-4845-b570-112be4c001ea">Tây Ninh</option>
+                                                                            <option value="ef2d6ac5-fbe5-48c3-a6c5-25e39fad27b5">Thái Bình</option>
+                                                                            <option value="55837ba0-6a83-4010-ae1e-91e1e522ccb8">Thái Nguyên</option>
+                                                                            <option value="6d910462-7f5e-4272-8c1c-7c84bcaaf03d">Thanh Hoá</option>
+                                                                            <option value="33371d95-ad67-4e76-bc04-c8d23cdd3fcf">Tiền Giang</option>
+                                                                            <option value="ce934e15-eb2e-454c-8235-2d5bef57a855">TP. Hồ Chí Minh</option>
+                                                                            <option value="fa715535-a149-489c-bb68-85a954c6454c">Trà Vinh</option>
+                                                                            <option value="f5a5f58a-276b-4c46-924a-a97e6cb7ef39">Trên tàu hỏa</option>
+                                                                            <option value="3706319d-296d-4130-9f4d-899393521007">Trường Sa</option>
+                                                                            <option value="9e274bbf-621f-4656-b902-636a8699a75c">Tuyên Quang</option>
+                                                                            <option value="a671267e-92e7-46a5-9c8e-841ee5aa4a3d">Vĩnh Long</option>
+                                                                            <option value="d43f22b2-92a6-4e3c-ad27-38901996b2ae">Vĩnh Phúc</option>
+                                                                            <option value="f7ca90bc-bef8-41dc-9702-265f588f011b">Yên Bái</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <label>Quận/Huyện</label>
+                                                                        <select class="form-select" id="DistrictId" name="DistrictId">
+                                                                            <option value="">Chọn quận/huyện</option>
+                                                                            <option value="243b53a8-c021-4cff-bd23-5cf6660c24d0"> FOOTSCRAY</option>
+                                                                            <option value="ed6878e9-1f2b-4932-8be1-9a9a2b240d89"> HUYỆN GÒ QUAO</option>
+                                                                            <option value="f083a3ef-438f-4b86-be1b-aed20f0889e2">A Lưới</option>
+                                                                            <option value="020a24a3-0f47-4278-bb09-e98435e967c2">Amsterdam</option>
+                                                                            <option value="f4ad907c-c225-46b1-9f1d-1e83f6bc4311">An Biên</option>
+                                                                            <option value="24d9ae80-8d84-4497-a430-712925b5097f">An Minh</option>
+                                                                            <option value="49c5ff66-fba0-467f-8258-5e8a3f583f0b">AN PHÚ</option>
+                                                                            <option value="207139f8-646a-40dc-b318-154ae7c28612">Ân Thi</option>
+                                                                            <option value="74d8644c-c330-44da-afa7-917705dd2ed8">Anh Sơn</option>
+                                                                            <option value="b22c9be2-f16d-4a98-bef8-17fb46febaef">Ba Chẽ</option>
+                                                                            <option value="0d8205db-4d2c-4fa8-809e-d57a8fd5f44b">Ba Đình</option>
+                                                                            <option value="4a59232f-094f-4491-a790-78179f5d6274">Bá Thước</option>
+                                                                            <option value="c2b393e2-651b-432b-8296-c8fb2218017b">Ba Tơ</option>
+                                                                            <option value="593c9acc-86d3-43fa-a82b-e213a4ebdf97">Ba Tri</option>
+                                                                            <option value="28ee1f26-223a-4b0e-8975-44bc28c9683f">Bắc Bình</option>
+                                                                            <option value="753f5bc3-6b9f-45b0-8820-598a4b85002f">Bắc Giang</option>
+                                                                            <option value="9a3bbeb1-649b-4821-9612-53ffc0df1fd0">Bắc Hà</option>
+                                                                            <option value="d0abf4b4-26fc-417d-99a5-7946572812db">Bắc Mê</option>
+                                                                            <option value="5494109a-c82f-493a-8631-28c30272082c">Bắc Quang</option>
+                                                                            <option value="5b5a366c-4f3b-4d86-b688-054e60d50f26">Bắc Sơn</option>
+                                                                            <option value="1cd9da47-5a22-4585-9fc5-71aeefcf6791">Bắc Tân Uyên</option>
+                                                                            <option value="510b9636-cdf0-4edf-8120-ef1d9a3db5e2">Bắc Yên</option>
+                                                                            <option value="3d505d52-196a-4285-b086-100186997076">Bảo Lạc</option>
+                                                                            <option value="aa6f4989-5db5-474f-8c3e-5caa88b0bba4">Bảo Lâm</option>
+                                                                            <option value="b6bd9549-8b13-4227-9c3d-06b247606edc">Bảo Thắng</option>
+                                                                            <option value="6b97eac7-5bdb-49ad-8882-08fcf9ea6f26">Bảo Yên</option>
+                                                                            <option value="3aa02db4-813d-47f8-aee2-fd476f43ac0e">Bát Xát</option>
+                                                                            <option value="0fdd8ce4-d14d-4434-bbcb-0e88700e4ce8">Bàu Bàng</option>
+                                                                            <option value="4adc3648-72d8-4090-9221-506b6c709c0b">Bến Lức</option>
+                                                                            <option value="3e2e6205-d2e0-45ba-9fa8-a3c90d7c9458">Bien Hoa</option>
+                                                                            <option value="5bace117-0fe3-4e1b-be34-6b0ef1819557">Bình Chánh</option>
+                                                                            <option value="114dc309-fe6e-41a0-9362-f9617a8fa525">Bình Đại</option>
+                                                                            <option value="db46d846-422c-451a-811f-fada23933408">Bình Gia</option>
+                                                                            <option value="cbce0a84-bfdd-4569-b6ba-88cbd28d218a">Bình Giang</option>
+                                                                            <option value="508aa34e-50f5-4569-b756-7f5a95b3c029">Bình Liêu</option>
+                                                                            <option value="8a41a568-3d99-4aee-8cf6-0edda3012b25">Bình Lục</option>
+                                                                            <option value="63308abe-5e4a-4103-b7e1-a46f33e516e5">Bình Minh</option>
+                                                                            <option value="85786cc1-d553-4b4a-a38e-9d63c3f1a071">Bình Sơn</option>
+                                                                            <option value="a7308f73-7478-4cbc-9fc1-a9787d8e6cf7">BÌNH THỦY</option>
+                                                                            <option value="17a8518e-e82f-4887-b403-e4c57c8a47aa">Bình Xuyên</option>
+                                                                            <option value="a2eda562-9f95-4001-9284-48ffc9f47bd0">BMT</option>
+                                                                            <option value="3f7597e1-f632-4aa2-8b75-da03f52ae9b4">Bố Trạch</option>
+                                                                            <option value="b5faaeb4-9e9c-4faa-b72b-6177cedcf211">Bokor</option>
+                                                                            <option value="6082b579-73b8-4de1-b972-accffcb56857">Buôn Đôn</option>
+                                                                            <option value="71bcf2b5-ad61-4176-8995-8d2f7ada24ee">Cái Bè</option>
+                                                                            <option value="50dbab54-2583-41a9-a6fa-8052a5c04b38">Cai Lậy</option>
+                                                                            <option value="31946bc6-14d3-4e40-ad43-2cefe2558c52">Cái Mơn</option>
+                                                                            <option value="e04be4a2-aec3-4870-b35b-2a3f79b04446">Cái Nước</option>
+                                                                            <option value="6039477a-37bc-408d-9d46-2ddd3df7eb5e">Cái Răng</option>
+                                                                            <option value="1d77142a-1a5b-404b-8e32-cf6ff00235df">Cái Răng</option>
+                                                                            <option value="1a491446-63c6-4519-b9ea-01ed0fd99448">Cái Vồn</option>
+                                                                            <option value="bb5b0856-d4b1-49ae-a5c4-8067b1654332">Cẩm Giàng</option>
+                                                                            <option value="aad647f7-f8fa-4ebf-8e55-09591198533a">Cẩm Khê</option>
+                                                                            <option value="722a90a4-c2ed-46ce-93ef-1d89a951b2d5">Cam Lâm</option>
+                                                                            <option value="451e9c07-e151-45a2-805b-3b58852dc65d">Cam Lộ</option>
+                                                                            <option value="f217b530-a7a9-43c8-adaf-04a6c04b0585">Cẩm Mỹ</option>
+                                                                            <option value="925a28bc-3fad-4b19-bbf1-7f341d929c28">Cẩm Phả</option>
+                                                                            <option value="03f7e6ec-dcd6-4e24-994d-a98dfe3acdf4">Cam Ranh</option>
+                                                                            <option value="5b133405-2e3d-4d96-930e-ada1370c4c67">Cẩm Thủy</option>
+                                                                            <option value="e7756971-b11d-4dbc-b369-49b83584d2bb">Cẩm Xuyên</option>
+                                                                            <option value="8e490670-b736-4a56-b6c9-3a5751cb290d">CẦN ĐƯỚC</option>
+                                                                            <option value="44359634-ee17-44ae-83cd-8f1ff34f2a41">Can Lộc</option>
+                                                                            <option value="bdfc51cb-d9a0-4c31-91b5-4f8a91bf4d3d">CÀNG LONG</option>
+                                                                            <option value="b98ec3e2-37bf-46d6-8d98-02d53a750fa0">Cao Lãnh</option>
+                                                                            <option value="e5429a75-33a6-4059-8f0a-abac65dcfd84">Cao Lãnh</option>
+                                                                            <option value="2b5c68eb-f950-4ff9-9f41-6da83faebd6b">Cao Lộc</option>
+                                                                            <option value="fdc5cb25-f55f-4c5f-8824-5e6f10d9e035">Cát Tiên</option>
+                                                                            <option value="7da53f78-3b53-420f-8b70-1322f7ca26bf">Cầu Giấy</option>
+                                                                            <option value="25380263-e1c6-4143-8a1e-0b7a87b5af30">Cầu Kè</option>
+                                                                            <option value="12bd5e30-96c8-41a2-b2da-578ad195aedb">Châu Thành</option>
+                                                                            <option value="a2efaba0-71ae-43b9-bf9f-651ddb594ea0">CHÂU THÀNH</option>
+                                                                            <option value="c5b44478-179d-4f5f-80fe-ab81aa88d20e">Châu Thành</option>
+                                                                            <option value="f3175911-e0b5-41a2-b9c6-b3fe132a3672">CHÂU THÀNH</option>
+                                                                            <option value="02ccadca-b853-4871-91dc-d6a65181ad1f">CHÂU THÀNH</option>
+                                                                            <option value="b4def0d6-b530-43b7-9095-7d9f744aecdf">Chi Lăng</option>
+                                                                            <option value="0d75963e-e7a0-4ff2-b0d5-067fac9f8a46">Chicago</option>
+                                                                            <option value="141d0d9b-8c44-4939-89d2-d84329a3c095">Chiêm Hóa</option>
+                                                                            <option value="2f2ecd56-b396-4b61-a4f8-adf4cea2da0d">CHỢ GẠO</option>
+                                                                            <option value="5207b1ad-b514-4a5e-be54-65560ad0a0bc">Chợ Lách</option>
+                                                                            <option value="5445ecd3-f368-4120-8f2e-5bd42a52fe9e">CHƠN THÀNH</option>
+                                                                            <option value="bd2c6fed-0fc7-412d-a9ae-07115d4ba790">Chư Păh</option>
+                                                                            <option value="016b4ed4-6b3b-4045-833a-54c8f912d193">Chư Prông</option>
+                                                                            <option value="91c0f41f-f61f-435b-a7b3-1bf223f8d878">Chư Pưh</option>
+                                                                            <option value="703122cd-24ab-44e7-b960-38ca6b6171a1">Chư Sê</option>
+                                                                            <option value="afdb160e-7773-420e-a2b4-cc95296125ac">Chương Mỹ</option>
+                                                                            <option value="7a9adeac-856f-4a73-862e-8592104047d0">Cờ Đỏ</option>
+                                                                            <option value="5797a4b5-a5a2-4261-9fde-1c855ac2177d">Cô Tô</option>
+                                                                            <option value="1c5bac9e-05e4-4c4e-9f3e-3ec463b3d7fb">Cồn Cỏ</option>
+                                                                            <option value="5c08debf-e37a-4b09-ac65-22b863c73f63">Con Cuông</option>
+                                                                            <option value="af3a29aa-4d22-4c54-9115-0d2b4518e8d0">Cư Jút</option>
+                                                                            <option value="2e9cf753-d941-45d3-8c1e-12fb94e4863e">Cư Kuin</option>
+                                                                            <option value="463126f6-fb10-4a78-96d1-e902a5f664e6">Cư M'gar</option>
+                                                                            <option value="765414f6-a470-4c42-bb86-0ecd9db31cf2">Đà Bắc</option>
+                                                                            <option value="ebd0fbe5-fbeb-412f-b08a-b341ca4db2b3">Đa Krông</option>
+                                                                            <option value="baeb5c12-f717-4a0e-8f9f-6d28de24823e">Đạ Tẻh</option>
+                                                                            <option value="e866bd0c-21f8-4db2-bdd4-b94c63a458a9">Đại Lộc</option>
+                                                                            <option value="f9deab9f-2cfe-4bcb-8a0c-16f5652ae8a7">Đăk Đoa</option>
+                                                                            <option value="88a66aa0-808b-4308-b247-f72243d0b5cb">Đắk Glei</option>
+                                                                            <option value="af3dea26-a2ab-486d-b079-ac9122ba359a">Đắk Hà</option>
+                                                                            <option value="0c27482c-1093-44ba-81f5-886933cecc02">Đắk Mil</option>
+                                                                            <option value="ad16dc79-cfda-421e-96a3-120871fa5503">Đăk Pơ</option>
+                                                                            <option value="67490d2e-c72b-447b-b2f1-bf09d5d3b3f7">Đắk R'Lấp</option>
+                                                                            <option value="e87e77c4-a776-455e-9831-e6f2aecef901">Đắk Song</option>
+                                                                            <option value="e347cf91-bdec-4e5a-ab40-5194189ed843">Đắk Tô</option>
+                                                                            <option value="417daaab-adc7-4213-8695-cb1a932323ed">Đầm Dơi</option>
+                                                                            <option value="7129be11-fa05-4831-a459-28ef488b26e2">Đầm Hà</option>
+                                                                            <option value="08524a93-e488-466b-b02b-c9afb8c0cf7f">Đam Rông</option>
+                                                                            <option value="ab09762e-99b8-451c-92e1-6872783c182f">Đan Phượng</option>
+                                                                            <option value="3a627b48-d147-4645-914b-78c8ebafb125">DẦU TIẾNG</option>
+                                                                            <option value="22921faa-2791-423c-9da3-9556dbc08719">DĨ AN</option>
+                                                                            <option value="034312a5-2d5f-41fa-b861-c81f6661efbd">Dĩ An</option>
+                                                                            <option value="e11481a3-46a4-4d8c-8de3-28bb677057c4">Di Linh</option>
+                                                                            <option value="4d508d8e-54d9-4d73-b4dd-6ae71f436fa4">DIỄM CHÂU</option>
+                                                                            <option value="66b7a949-0762-4305-9721-ad4cb8cac0f6">Điện Biên</option>
+                                                                            <option value="4e4e7528-6ad9-4e17-8133-eda29b2c5a41">Điện Biên Đông</option>
+                                                                            <option value="ed16351d-161f-4367-80bd-32cab143ae00">Diên Khánh</option>
+                                                                            <option value="77e11ff6-f779-4d78-8202-2c458c4f772b">Đình Lập</option>
+                                                                            <option value="082bb380-ce41-41bb-987c-c5e277bcdcd2">ĐỊNH QUÁN</option>
+                                                                            <option value="4ae9088d-087c-4e0b-85b1-949ad2556488">Đô Lương</option>
+                                                                            <option value="c31274df-f3ba-48d2-ac16-0178e1aaccd0">Đoan Hùng</option>
+                                                                            <option value="0f12779c-40b7-4eb1-bd48-2cf205abfb6f">Đơn Dương</option>
+                                                                            <option value="8ae9cfd4-ee73-4b8c-8e4b-d86a426a926d">Đống Đa</option>
+                                                                            <option value="d4f2762a-9fb1-49d0-833f-41da27e03d44">Đông Giang</option>
+                                                                            <option value="f97fdacd-7049-4a1f-b4ef-96d3ffa6d518">ĐÔNG HÀ</option>
+                                                                            <option value="20b7371f-1c32-4f18-90ad-654ebf0c0c3e">Đông Hưng</option>
+                                                                            <option value="e72593e3-10f2-458c-bb26-168c4d9a0ce8">Đông Sơn</option>
+                                                                            <option value="1d661404-716d-4bbc-bc69-58e9263fc59a">Đồng Xoài</option>
+                                                                            <option value="e792e64f-ba2d-4d56-8daf-35c5ee3599c8">Đồng Xuân</option>
+                                                                            <option value="836cc619-4519-4ea3-b4bf-3839b24e8174">Đức Cơ</option>
+                                                                            <option value="6895a551-ad98-47b9-b5c5-4824071c68ca">Đức Huệ</option>
+                                                                            <option value="9b93b87e-477e-4db4-bf6a-30539e731a61">ĐỨC LINH</option>
+                                                                            <option value="f00f463a-f7e2-46e7-95a9-ecf6bfc94f2f">Đức Phổ</option>
+                                                                            <option value="03415977-153e-4a67-9835-43f175d90654">Đức Thọ</option>
+                                                                            <option value="9fe0abfe-c253-4bd5-87aa-518c0d0ecaf1">DƯƠNG MINH CHÂU</option>
+                                                                            <option value="ad2c5e90-f7b3-4973-9064-575803a2c656">Duy Tiên</option>
+                                                                            <option value="9e771126-332d-490a-a20c-303bf452e34e">Duy Xuyên</option>
+                                                                            <option value="040b065e-39e4-403a-b9ae-c6bcf07837d2">Ea H'leo</option>
+                                                                            <option value="4069563b-8d9d-46ce-bdec-ef64d146371a">Ea Kar</option>
+                                                                            <option value="217e4a0c-fd9c-4d63-9288-c3aa0064774d">Ea Súp</option>
+                                                                            <option value="242b4852-d8a6-41c7-a339-64bb44ff1daf">Gia Lộc</option>
+                                                                            <option value="69664eab-521c-4d65-9725-0d00c34a1759">Gia Viễn</option>
+                                                                            <option value="41efb4d8-c627-45a6-a60d-1dae744e1b3c">Giang Hải</option>
+                                                                            <option value="7730ea37-a0bd-482a-8f9e-e7102a29b0f5">Giang Thành</option>
+                                                                            <option value="61735b53-d950-4841-9c9e-38ef3a38e9e3">Giao Thủy</option>
+                                                                            <option value="757796e4-7b1c-4c4b-82a5-25362feaa524">Gio Linh</option>
+                                                                            <option value="fb3d8456-3a60-4955-9f2c-60797521d97d">Giồng Trôm</option>
+                                                                            <option value="d75c6742-3579-4283-9dfa-17aa292358b1">Gò Công Đông</option>
+                                                                            <option value="039ef85a-fc32-445c-8b78-6b97ed5fc3a3">Gò Công Tây</option>
+                                                                            <option value="13304863-0242-4505-b17a-02d85c7beb64">Hà Đông</option>
+                                                                            <option value="2cda07a4-9caf-4a48-915f-43240530762f">Hà Đông</option>
+                                                                            <option value="d562658c-7523-49b8-bd3c-fdadd1cdfc5e">Hạ Hoà</option>
+                                                                            <option value="888e92f4-d7ae-440e-8eac-f32a34e2d4c8">Hạ Lang</option>
+                                                                            <option value="9569170a-1271-4a4c-8dba-af2e054b81a2">Hà Quảng</option>
+                                                                            <option value="b4a62ca9-83d5-4d71-8c0e-50b7a7334fad">Hà Trung</option>
+                                                                            <option value="dd386606-b78f-46ed-ac4f-b510d29dc14b">Hai Bà Trưng</option>
+                                                                            <option value="3add3d81-fd8a-4370-8e3a-ce7ccac7714e">Hai Bà Trưng</option>
+                                                                            <option value="a31f434e-4c04-4c04-853e-b161f783a746">Hải Hà</option>
+                                                                            <option value="9eb4d7e9-0320-421a-89e2-eab3692ba857">Hải Hậu</option>
+                                                                            <option value="073e8569-c6b8-420e-b27d-639b25c96397">Hải Lăng</option>
+                                                                            <option value="f96b0765-7e08-4af3-96b5-d4e2fae7a33a">Hàm Thuận Bắc</option>
+                                                                            <option value="db2b460f-8c1a-4e7d-b353-517e728762da">HÀM THUẬN NAM</option>
+                                                                            <option value="aeacf68b-bc17-4073-8a58-a1b05fc64043">Hàm Yên</option>
+                                                                            <option value="e188698d-2ab2-42f9-a4b6-b0ee236d6fa0">Hậu Lộc</option>
+                                                                            <option value="75d3f8b5-825a-487f-a4a8-e6066b4e5ae5">Hiệp Đức</option>
+                                                                            <option value="8a268ee3-9428-441d-a8ae-74718225252f">Hoà An</option>
+                                                                            <option value="8a63b99d-5175-4f3a-a5e6-8a81c2af3e62">Hoa Lư</option>
+                                                                            <option value="218bc570-998d-4eed-81e8-40146fc74e98">HÒA THÀNH</option>
+                                                                            <option value="ae1c6a32-8eed-494b-93e4-633ce332df54">Hoài Đức</option>
+                                                                            <option value="ca350af5-41f2-4037-8aac-411be7543866">Hoàn Kiếm</option>
+                                                                            <option value="e773200c-edfb-4997-b6c4-b923a0b34910">Hoằng Hóa</option>
+                                                                            <option value="adb8599f-71f1-4b2a-a767-6164ff810254">Hoàng Mai</option>
+                                                                            <option value="ab3e36ac-e7f1-4f24-a34a-cc3fb208cb7e">Hoàng Mai</option>
+                                                                            <option value="947fdd30-e4c6-4da1-860d-691c81fa2dc3">Hoàng Su Phì</option>
+                                                                            <option value="b886ebe9-059c-4ccb-a704-7c2146d238fc">Hoành Bồ</option>
+                                                                            <option value="0d09710d-73c9-4b82-bb4a-c5a3e154cfaf">HỘI AN</option>
+                                                                            <option value="772f6380-fa16-49b9-864b-6bffd3f9ce73">Hòn Đất</option>
+                                                                            <option value="17d30c99-44e8-44df-b989-1c4fc43130c3">Hồng Ngự</option>
+                                                                            <option value="fa3403a9-94b1-470d-970e-caf7d694acc1">Hưng Hà</option>
+                                                                            <option value="ec035dc2-34db-4ef2-a125-d86cd3a71590">Hưng Nguyên</option>
+                                                                            <option value="7f70a33b-41a8-446c-9044-9cd4fce43c2d">Hướng Hóa</option>
+                                                                            <option value="3f952a16-9bbb-463e-bd1a-e3350208d0d5">Hương Khê</option>
+                                                                            <option value="23782279-bec4-4403-8790-d74b9aa9b2b9">Hương Sơn</option>
+                                                                            <option value="6e9db0ac-0af6-4604-9132-8fe988361c28">Hương Thuỷ</option>
+                                                                            <option value="750b3d70-a4d5-4090-b03d-1d12c6fe3c9a">Hương Trà</option>
+                                                                            <option value="fe317c96-0da7-405e-8709-821d20a2717a">Hữu Lũng</option>
+                                                                            <option value="8a7f5bb8-3136-4759-b183-bc91f4381c92">Huyện An Dương</option>
+                                                                            <option value="da486509-1929-4d06-b1b5-fb752265fd4f">Huyện An Lão</option>
+                                                                            <option value="831a3de6-19cb-43f0-a0d9-591ba95dc7e5">Huyện An Lão</option>
+                                                                            <option value="56794f2f-5391-498a-a5fa-94553e1190bc">Huyện An Nhơn</option>
+                                                                            <option value="c5860304-ffa0-4455-8f98-c169b3dec61b">Huyện An Phú</option>
+                                                                            <option value="84f2e34e-fcbb-47d5-9ec8-131399708c88">Huyện Ba Bể</option>
+                                                                            <option value="bf2fcf30-0768-40ab-b0a6-f07cc9941e16">Huyện Ba Vì</option>
+                                                                            <option value="b020036b-7532-471d-aa85-08492affeec4">Huyện Bạch Long Vĩ</option>
+                                                                            <option value="98f81928-a34f-440c-8f1a-487b4f8081ad">Huyện Bạch Long Vĩ</option>
+                                                                            <option value="26facf99-53a7-48d3-9473-3e8454eca75f">Huyện Bạch Thông</option>
+                                                                            <option value="c67fa0cf-fba4-49fe-bd4b-aaa0a84cc5bc">Huyện Bảo Lâm</option>
+                                                                            <option value="28ac0572-1d05-4c52-9d8a-d7b8deb9d8d1">Huyện Bến Cát</option>
+                                                                            <option value="a99b1b29-399b-435a-88bc-aded8ed00d9b">Huyện Bến Cầu</option>
+                                                                            <option value="a3039d08-1976-460e-9d74-5561d304a5ff">HUYỆN BẾN LỨC</option>
+                                                                            <option value="f824efeb-c5f9-4497-bb00-20e9639da204">Huyện Bình Long</option>
+                                                                            <option value="c32be3a2-90a6-4945-bd53-b33b153e5c1c">Huyện Bù Đăng</option>
+                                                                            <option value="c1738949-3fc5-498c-94b9-bdd2c88cf8e0">Huyện Bù Đốp</option>
+                                                                            <option value="39a4d00f-52c1-4313-bc88-b6d32e2b2857">Huyện Bù Gia Mập</option>
+                                                                            <option value="fc1c0778-779e-4f35-9eaa-ab89934bb030">Huyện Cần Giờ</option>
+                                                                            <option value="d0339ae5-7eb4-45ce-befa-8244c083dcff">Huyện Cần Giuộc</option>
+                                                                            <option value="db0582cb-b11a-4790-933d-57b0c8d7bc04">HUYỆN CÀNG LONG</option>
+                                                                            <option value="7fce543a-74a0-4ba1-b571-39ffedd9bdd5">HUYỆN CÀNG LONG</option>
+                                                                            <option value="28a1dbbc-9e6a-4a10-b9b1-f50e9c4bdbf1">HUYỆN CAO PHONG</option>
+                                                                            <option value="736716f6-e1ca-4cff-b7bc-bd3f6c7db71d">Huyện Cát Hải</option>
+                                                                            <option value="6c5e7632-b02c-4962-9c2c-ab7bcbf8dd20">Huyện Cầu Ngang</option>
+                                                                            <option value="eb025287-3aea-4c29-9dd9-aef07ec45c19">Huyện Châu Đức</option>
+                                                                            <option value="b66a569c-96e2-4732-a510-c68f4b6a0cdc">Huyện Châu Phú</option>
+                                                                            <option value="a5fa58b4-26e1-4066-a746-ee48ad5670ef">Huyện Châu Thành</option>
+                                                                            <option value="fc3b1963-7bec-4262-99c9-8f406dc15cad">Huyện Châu Thành</option>
+                                                                            <option value="248de569-513d-4b18-a32f-9e49602a06f5">HUYỆN CHÂU THÀNH</option>
+                                                                            <option value="65e4a4a0-b116-42c0-8083-333c1b158772">HUYỆN CHÂU THÀNH</option>
+                                                                            <option value="361fce1a-ac37-4408-9819-535ce5d72126">HUYỆN CHÂU THÀNH</option>
+                                                                            <option value="ab868f63-43de-42a5-81d0-289c6e592923">HUYỆN CHÂU THÀNH</option>
+                                                                            <option value="681ca419-7491-40a3-8b6b-0069d54a0072">HUYỆN CHÂU THÀNH</option>
+                                                                            <option value="d75ae808-20f9-44a6-8a79-b099bf011987">Huyện Châu Thành A</option>
+                                                                            <option value="c563ec50-d61d-419e-87f1-b751949b8dd3">HUYỆN CHÍ LINH</option>
+                                                                            <option value="88c0cb76-3534-4875-a04d-6e10e9d0b3f0">Huyện Chợ Đồn</option>
+                                                                            <option value="6601ca95-8d90-4a42-b943-93bac76d8dd5">Huyện Chợ Mới</option>
+                                                                            <option value="c3bb3829-a0e3-4e35-a888-ff3590c01aed">Huyện Chợ Mới</option>
+                                                                            <option value="9dbeb6fa-b9bb-4094-b2e2-f7737dc52ca1">Huyện Củ Chi</option>
+                                                                            <option value="99fcf7ea-d156-4e12-b82b-5de0f2a5e6ac">Huyện Đạ Huoai</option>
+                                                                            <option value="5ca08427-fe1f-460d-9a7d-342309df9179">Huyện Đại Từ</option>
+                                                                            <option value="4874bbb9-f203-47b5-9578-66fc2d1749f3">Huyện Đất Đỏ</option>
+                                                                            <option value="644aef17-191e-4230-b013-4d396539076c">HUYỆN DẦU TIẾNG</option>
+                                                                            <option value="a51a71cf-396b-4d04-ac9a-85c1165fed99">HUYỆN ĐIỆN BÀN</option>
+                                                                            <option value="768b87ea-84d3-4c30-8496-6d12e1600d50">Huyện Định Hóa</option>
+                                                                            <option value="b5501f01-305c-48ca-b73f-a4993bc36277">Huyện Đông Anh</option>
+                                                                            <option value="1b9d9431-009b-441e-be67-40a28cb080c9">Huyện Đông Hải</option>
+                                                                            <option value="5dfbcc04-5a45-4531-8cf9-eb0ff2563f7c">Huyện Đông Hòa</option>
+                                                                            <option value="603de510-5d37-4649-afb6-5217065da33b">Huyện Đồng Hỷ</option>
+                                                                            <option value="7b49f890-b934-4a57-956c-512901151d15">Huyện Đồng Phú</option>
+                                                                            <option value="c1ec6b55-1a41-4d07-852e-7b33d2ecde12">HUYỆN ĐÔNG TRIỀU</option>
+                                                                            <option value="1af425e8-5b68-41c9-af54-25402dbaf3b7">Huyện Đồng Văn</option>
+                                                                            <option value="61220e8f-e918-451d-af2e-f7570c424718">Huyện Đức Hòa</option>
+                                                                            <option value="20d122cb-fe74-4fc7-b918-25f426e6d318">Huyện Gia Bình</option>
+                                                                            <option value="b673a24b-625e-4a62-8b31-2352cda83a03">Huyện Gia Lâm</option>
+                                                                            <option value="b9b1eca7-b191-49d6-9b7e-287cfa092a67">HUYỆN Giá Rai</option>
+                                                                            <option value="206da6dd-8a30-4027-81f5-282c6f10b91a">HUYỆN GIỒNG RIỀNG</option>
+                                                                            <option value="1bd347fd-5f69-4983-a2c6-30d62cf63a29">Huyện Gò Dầu</option>
+                                                                            <option value="6fab7cec-ffe9-4487-b676-510d584e928e">Huyện Hiệp Hoà</option>
+                                                                            <option value="5eac2e84-dd90-4b03-8c4e-74a0f0093ffe">HUYỆN HỐ NAI</option>
+                                                                            <option value="b5b56699-b3ba-4199-a3bc-e7f89f9a86d7">Huyện Hoà Bình</option>
+                                                                            <option value="56405029-5416-4dc7-8774-831eede2dd94">Huyện Hòa Vang</option>
+                                                                            <option value="34b4e757-f642-4791-9cd4-311eb2064837">Huyện Hoài Ân</option>
+                                                                            <option value="a53be5e7-9177-46da-b8eb-037560a1102a">Huyện Hoài Nhơn</option>
+                                                                            <option value="ad54451a-16a1-4914-a5ad-53ee696319d8">Huyện Hoàng Sa</option>
+                                                                            <option value="e870a962-72f3-4e4f-8386-135509129ada">Huyện Hóc Môn</option>
+                                                                            <option value="b796f88d-ba3d-4611-9557-7041747ab67c">Huyện Hớn Quản</option>
+                                                                            <option value="7ca7d717-ef88-4da2-a2f8-5bf5f3b77bae">Huyện Hồng Dân</option>
+                                                                            <option value="339e78ba-cb56-4c52-aae6-08c35935023b">HUYỆN HỒNG NGỰ</option>
+                                                                            <option value="730bc552-75c1-42fc-9705-36b9bf4b0f1e">Huyện Kế Sách</option>
+                                                                            <option value="7404c4b4-9387-4c17-9997-7d47cff3f602">Huyện Khánh Vĩnh</option>
+                                                                            <option value="15da3818-9ae0-426b-87f9-e669a1ca2fe4">Huyện Kiến Thụy</option>
+                                                                            <option value="bbb68061-5484-46bc-8eef-038876c5b4cf">HUYÊN KIM SON</option>
+                                                                            <option value="33b8b821-94c9-451b-812e-606c43a6b721">Huyện Lai Vung</option>
+                                                                            <option value="04a9382c-563a-4822-8428-2c9d0adaafb4">Huyện Lâm Hà</option>
+                                                                            <option value="9670361f-c692-48ec-9f04-489f3fbb86c8">Huyện Lạng Giang</option>
+                                                                            <option value="fc00c8f2-a077-4f19-aa7b-9596b561fe87">HUYỆN LẤP VÒ</option>
+                                                                            <option value="a0681722-093b-4464-a738-f78e9b07a2b0">HUYỆN LIÊM NGHĨA</option>
+                                                                            <option value="6f1af94f-86a3-4b82-b006-17fd98909e99">Huyện Long Đất</option>
+                                                                            <option value="c15de77c-3cfa-439c-b8e7-f85c05de7c41">HUYỆN LONG ĐIỀN</option>
+                                                                            <option value="b390926f-7ab9-4491-9fbc-fe6bc9b4120d">Huyện Long Hậu</option>
+                                                                            <option value="7dbc008f-2d66-4fed-a2b2-57abd933cdb6">Huyện Long Hồ</option>
+                                                                            <option value="d5d09cef-7e62-4321-8aee-25ad65d3180f">Huyện Lục Nam</option>
+                                                                            <option value="7004cb13-f38c-4545-b802-879184b5720c">Huyện Lục Ngạn</option>
+                                                                            <option value="7eff217c-7f29-47fb-9299-906392a54ebd">HUYỆN LƯƠNG SƠN</option>
+                                                                            <option value="8bc8eaba-4ede-4f54-a3a7-1e9c5f115f33">Huyện Lương Tài</option>
+                                                                            <option value="460e12db-e9f7-47e0-8139-51bb33de4761">Huyện Lý Nhân</option>
+                                                                            <option value="ff1a08eb-be5d-4dbd-a0ac-8fac3092e95e">Huyện Mèo Vạc</option>
+                                                                            <option value="e106461f-2877-4211-a64d-2ed81e68696c">Huyện Minh Châu</option>
+                                                                            <option value="65a9d1cd-95cb-4fe2-9d01-65ca99d439e4">Huyện Mỹ Tú</option>
+                                                                            <option value="d6a145d4-8dd6-4f65-b7cd-6b0fcc4b2199">Huyện Mỹ Xuyên</option>
+                                                                            <option value="fa8f38eb-c06d-488e-8b4f-edbd585ddd90">Huyện Na Rì</option>
+                                                                            <option value="fc70bcca-cc6a-4bef-b722-53850710d2e1">Huyện Ngân Sơn</option>
+                                                                            <option value="2c28914b-9a94-4db1-8c53-034029636950">HUYỆN NGHI LỘC</option>
+                                                                            <option value="a4e66362-ed89-4c88-b713-084e4fd344c9">Huyện Nhà Bè</option>
+                                                                            <option value="e25e62a5-3962-4784-8103-4663b939e949">Huyện Nhơn Trạch</option>
+                                                                            <option value="8343b66a-e6e0-4bdc-a261-4ba2722f11e9">HUYỆN NINH HẢI</option>
+                                                                            <option value="1cdd3233-39b1-4391-8fe3-9065967849a2">Huyện Ninh Hòa</option>
+                                                                            <option value="9d9aecd2-cebb-4ec7-bfe8-d79457ef85e0">HUYỆN NÚI THÀNH</option>
+                                                                            <option value="b05edbea-e8fe-49e5-b2c5-b74e75b726fb">Huyện Pác Nặm</option>
+                                                                            <option value="54afa392-3a2b-4f08-9e62-2f2954587227">Huyện Phổ Yên</option>
+                                                                            <option value="0b56e967-e140-4710-87ad-4952089e1775">Huyện Phú Bình</option>
+                                                                            <option value="c9653233-b7a0-40ab-b962-81b2d943c78b">Huyện Phù Cát</option>
+                                                                            <option value="c5ff3b2b-4626-4d9d-a1ab-0fd8138401e3">Huyện Phù Cừ</option>
+                                                                            <option value="dc4a5e2a-2ac4-4ef3-84bf-0bab5d690915">Huyện Phú Lương</option>
+                                                                            <option value="c3e29652-79f4-4a5d-bd7a-b735d62249ff">Huyện Phù Mỹ</option>
+                                                                            <option value="a6df9804-9544-4e86-beb3-899170feffe0">Huyện Phú Quốc</option>
+                                                                            <option value="8af5e40f-6db1-497e-9d59-b0d0d8c22c30">HUYỆN PHÚ TÂN</option>
+                                                                            <option value="d9363ec1-fc7f-48e8-8643-4f1efcdc22aa">Huyện Phú Tân</option>
+                                                                            <option value="256c743f-4225-47c4-a359-cd20c8c1b388">HUYỆN PHỤNG HIỆP</option>
+                                                                            <option value="99d765bc-e732-43c6-8b0e-c0ce4f1654c3">Huyện Phước Long</option>
+                                                                            <option value="ad46d7f1-19c9-4bb3-9476-da487b9a827c">Huyện Quế Võ</option>
+                                                                            <option value="82c2b6eb-6430-40b0-8356-18f3807a6e5d">Huyện Sóc Sơn</option>
+                                                                            <option value="5d6ba374-4492-4149-9c87-1fa0cc1ae17d">Huyện Sơn Động</option>
+                                                                            <option value="3907f579-e5ab-4a3e-bc38-0b76b99d0403">Huyện Sơn Trà</option>
+                                                                            <option value="f3e6fbd8-4839-47da-b66d-7f078f1c1ff9">HUYEN SÔNG CÂU</option>
+                                                                            <option value="b515e66b-6274-417d-a469-06cf5781716a">Huyện Tam Nông</option>
+                                                                            <option value="ca9b5505-f05c-4ae8-a0ec-95d8f39541ac">Huyện Tân Châu</option>
+                                                                            <option value="95d95978-0e12-4871-b90a-f120fe5a4b25">Huyện Tân Châu</option>
+                                                                            <option value="d66eb03d-231f-437c-815d-6932cd5caf3e">HUYỆN TÂN HỒNG</option>
+                                                                            <option value="79d1769b-ce8b-4507-809d-10705fc1dcac">HUYỆN TÂN PHÚ ĐÔNG</option>
+                                                                            <option value="3854e2c9-39e8-44b0-995c-c4de4849d3e7">HUYỆN TÂN PHƯỚC</option>
+                                                                            <option value="149ade10-2233-46d1-b398-5ee3b619205b">Huyện Tân Thành</option>
+                                                                            <option value="7321157a-a62d-47d2-938a-222bf6dda29e">Huyện Tân Yên</option>
+                                                                            <option value="67229a5b-2a92-459e-be5c-63bc2f761bd4">HUYỆN TÁNH LINH</option>
+                                                                            <option value="a03686aa-53ca-4132-ada5-7df4880ed938">Huyện Tây Sơn</option>
+                                                                            <option value="e126bcc1-6f68-499b-af87-4a8496a165db">HUYỆN THẠCH THẤT</option>
+                                                                            <option value="ebca09c4-8cbc-42a4-8611-13ab956d2439">Huyện Thanh Bình</option>
+                                                                            <option value="e8ac706b-9b4a-4733-b2c0-0c7ac89b5de5">Huyện Thanh Trì</option>
+                                                                            <option value="c82a9636-8cf1-4c7d-8a1a-68f597314d87">HUYỆN THẠNH TRỊ</option>
+                                                                            <option value="56bfd3a5-25f2-4f0b-9ffa-8d43432f3997">Huyện Thoại Sơn</option>
+                                                                            <option value="775d5277-72e3-482a-a3ad-231a41f3aba0">HUYỆN THỚI BÌNH</option>
+                                                                            <option value="bc24bd54-96fe-42a0-a994-efe5177a2fa0">HUYỆN THỦ THỪA</option>
+                                                                            <option value="f1fa1ac9-4a9c-49c7-a3bd-6b0d10880ae6">Huyện Thuận Thành</option>
+                                                                            <option value="88f9b121-8788-4403-8205-79b5b0642bf2">Huyện Thủy Nguyên</option>
+                                                                            <option value="1d9fc1d8-56ea-4891-8a92-f2e51a538c2c">Huyện Tiên Du</option>
+                                                                            <option value="64d95aa4-5819-448d-80c5-e57e99a54104">Huyện Tiên Lãng</option>
+                                                                            <option value="adcf90a9-4fa1-416d-9417-e10d08b38dad">Huyện Tiểu Cần</option>
+                                                                            <option value="e3091fa2-28cd-4df5-bafb-437f76248157">Huyện Tịnh Biên</option>
+                                                                            <option value="80f9c47a-dc1d-4c75-a2c0-afb4c14ba66d">HUYỆN TRẦN ĐỀ</option>
+                                                                            <option value="7eeca78f-19d0-4d67-91b3-1c543bd44115">HUYỆN TRẦN VĂN THỜI</option>
+                                                                            <option value="e58d4e5b-364f-4341-b59a-d9da39fbe117">Huyện Trảng Bàng</option>
+                                                                            <option value="905a4bab-8e35-49aa-9863-821a132068bb">Huyện Tri Tôn</option>
+                                                                            <option value="edab14c9-30cf-4134-a6ea-a911cf360330">HUYỆN TRƯỜNG TÂN</option>
+                                                                            <option value="824efd6a-1c7c-4898-8cf5-142f4b91c95e">Huyện Từ Sơn</option>
+                                                                            <option value="9fc6f5bb-7358-4d33-b219-9451f4e14735">huyện tuy phong</option>
+                                                                            <option value="28ec986b-df47-4edf-bb56-5dbceb9245ff">huyện tuy phong</option>
+                                                                            <option value="e71f0ca6-2df1-4ec0-a086-339a9d6da130">Huyện Tuy Phước</option>
+                                                                            <option value="d9d4c8cb-e936-4898-858f-0445c1cc04da">Huyện Vân Canh</option>
+                                                                            <option value="add8b6d4-8099-4d4a-9a76-fec0814de38c">HUYỆN VĂN LÂM</option>
+                                                                            <option value="db1133d1-4797-49d6-90ce-8ee34ecd54c0">Huyện Vị Thủy</option>
+                                                                            <option value="11d5991c-9362-49b7-ac26-b2d25f0c5501">Huyện Việt Yên</option>
+                                                                            <option value="81fdcc86-f2bf-4de2-b3aa-e3397fbb3577">HUYỆN VĨNH CỬU</option>
+                                                                            <option value="24a81051-9307-4682-a6f8-c180022e0d5d">HUYỆN VĨNH LỢI</option>
+                                                                            <option value="b577ce3e-7944-484b-8095-b44123dc0400">Huyện Vĩnh Thạnh</option>
+                                                                            <option value="89589153-8d5b-49fe-b2b2-570fd3759d07">HUYEN VINH THUAN</option>
+                                                                            <option value="fa90738f-2f25-4096-a2d5-36b8d3b4c6d1">Huyện Võ Nhai</option>
+                                                                            <option value="65aa6d02-42cc-4233-a19c-bd0a32345a49">HUYỆN VŨNG LIÊM</option>
+                                                                            <option value="df15be3f-3608-4589-aade-2a7da994c770">Huyện Xuyên Mộc</option>
+                                                                            <option value="efbdf392-d9f5-440c-8c57-c333d6bcb581">Huyện Yên Dũng</option>
+                                                                            <option value="2cb83a21-bb70-460b-87cc-ddf348e78c0b">Huyện Yên Phong</option>
+                                                                            <option value="6e239477-44c8-492d-b1c3-f3ad300c4c90">Huyện Yên Thế</option>
+                                                                            <option value="dbd522dc-d4d8-4835-a509-daa7dde7f4f5">Ia Grai</option>
+                                                                            <option value="5b4f1786-cf28-455a-be07-f135abb683d3">Ia H' Drai</option>
+                                                                            <option value="6959c44d-8e70-4079-a32e-4edc4ad5a2f1">Ia Pa</option>
+                                                                            <option value="76a52363-58f9-49e9-bb4f-a68e97488282">KBang</option>
+                                                                            <option value="2247732e-6455-4a41-8b19-360c5a7a5718">KHÂM THIÊN</option>
+                                                                            <option value="acc22599-fc8a-49ca-a4f5-c7585c5c02c1">Khoái Châu</option>
+                                                                            <option value="a6d8f081-0724-4d45-b9a1-d0db954a5faa">Kiên Hải</option>
+                                                                            <option value="8645cf96-cdb7-4de3-bfd3-50c9eaf51c74">Kiên Lương</option>
+                                                                            <option value="a27c3fe1-d267-4849-8597-6c31fe660811">Kiến Xương</option>
+                                                                            <option value="2030c5d4-6a08-4175-b750-4b4e142b1ab5">Kim Bảng</option>
+                                                                            <option value="6515b492-b82d-4d69-a353-ad2b45d87fce">Kim Bôi</option>
+                                                                            <option value="09068fde-59d2-4d1f-bdc0-685b55f4e229">Kim Động</option>
+                                                                            <option value="ef6d4b6c-792f-452a-8578-48dc0df311f4">Kim Thành</option>
+                                                                            <option value="127ecb83-27c8-4b42-88ca-8c399070df00">Kinh Môn</option>
+                                                                            <option value="c906af26-a76f-44cc-b893-971a0248b1b4">Kon Plông</option>
+                                                                            <option value="f20c9ec5-542c-4960-b273-194eeff718ac">Kon Rẫy</option>
+                                                                            <option value="e399824f-7060-4a51-bb56-8f267f0cae38">Kông Chro</option>
+                                                                            <option value="721edddc-c238-43be-8227-c5c050ddf1ba">Krông A Na</option>
+                                                                            <option value="16b4045b-26c7-449e-82b7-8abc874420ed">Krông Bông</option>
+                                                                            <option value="2fcdd3c3-5a3d-48a2-8726-c161a23cce7c">Krông Búk</option>
+                                                                            <option value="4146564c-990b-41e9-9334-bcb3ea0c0935">Krông Năng</option>
+                                                                            <option value="5ef1a13c-d6fc-4176-a600-89e4a7c155d7">Krông Nô</option>
+                                                                            <option value="3b530574-541e-4fcf-8566-365163fe1748">Krông Pa</option>
+                                                                            <option value="79cbae2a-b187-447c-960e-3ecedf7b51d3">Krông Pắc</option>
+                                                                            <option value="0852be86-e46a-4fb2-bad7-2553e5093e4f">Kỳ Anh</option>
+                                                                            <option value="90a3cd9e-c505-4cb5-bd73-21c954923427">Kỳ Sơn</option>
+                                                                            <option value="933839bc-059d-4a90-86c3-350a38359b34">Kỳ Sơn</option>
+                                                                            <option value="22f5bde9-c033-4549-8117-c86d38356d0a">Lạc Dương</option>
+                                                                            <option value="3812c089-9fd8-4f85-88b2-db4c6b99115b">Lạc Sơn</option>
+                                                                            <option value="918cdc18-4a0d-4893-a113-77516f1e43c9">Lạc Thủy</option>
+                                                                            <option value="44b62b73-babf-470a-b92e-64174249e49f">Lắk</option>
+                                                                            <option value="cce49cd8-d14c-4367-817d-bd289bd9fe41">Lâm Bình</option>
+                                                                            <option value="1e85b5e8-8409-401b-83b1-d7be6cbcde51">Lâm Thao</option>
+                                                                            <option value="a285cad5-c083-4a5d-ace3-65385fc8ea4c">Lang Chánh</option>
+                                                                            <option value="fad69fe8-0fe1-488b-b2a6-7a4f6ff3e3c6">Lập Thạch</option>
+                                                                            <option value="f578bf61-5e8f-409e-8061-efaa09bacb0a">Lệ Thủy</option>
+                                                                            <option value="d44a02a5-5854-42f0-b1cd-f9861823d8ed">LIÊM NGHĨA</option>
+                                                                            <option value="f663040e-08d5-4aed-9e5c-5641bea4de76">Little Saigon</option>
+                                                                            <option value="c2b6cc70-cc3f-4b1f-8ebe-de5dab53001b">Lộc Bình</option>
+                                                                            <option value="12beee03-9d2f-4ee0-8282-ebe0be94334e">Lộc Hà</option>
+                                                                            <option value="33e42938-9b10-408f-ab96-41d5f0e38b16">LỘC NINH</option>
+                                                                            <option value="19c2c060-ba99-4459-84a6-95fd0895c2ac">Long Biên</option>
+                                                                            <option value="05693bc9-13b0-4af0-8797-30335b8fdcbf">Long Mỹ</option>
+                                                                            <option value="58d78719-71de-4888-b18a-41bdffb8373e">LONG PHÚ</option>
+                                                                            <option value="58198a86-b2f2-4b01-8901-1819ac464674">Long Thành</option>
+                                                                            <option value="3596070c-8cb0-484b-afaf-d8bae33cf12b">Long Thành</option>
+                                                                            <option value="e61b3b20-714f-49e4-847c-e5e2fcbe3fe3">Lục Yên</option>
+                                                                            <option value="79dc6014-4a51-427e-bc0f-1bbc14db4821">Lý Sơn</option>
+                                                                            <option value="0c215de2-0a3e-4bc8-bd40-6890e1942070">Mai Châu</option>
+                                                                            <option value="a53ca5ff-8e5a-44b2-bea8-99f04895288d">Mai Sơn</option>
+                                                                            <option value="2ee7a7da-e0c5-486e-a488-0f7ae0d147de">MAIDSTON</option>
+                                                                            <option value="9acaa951-77e0-4e58-9fac-7a9caa485611">Mang Thích</option>
+                                                                            <option value="f70280f0-6cd1-4248-bb63-657472f4baec">Mang Yang</option>
+                                                                            <option value="486686d6-7f1e-4aa4-afe9-d02bf71fc953">M'Đrắk</option>
+                                                                            <option value="8b43c5c1-c4e0-48a0-85cb-2cc078a58964">Mê Linh</option>
+                                                                            <option value="d0d891da-39b5-4b91-8c56-90ec8312b0bc">Minh Hóa</option>
+                                                                            <option value="4def7edb-ddee-4422-8099-ab3d4bc039ea">Minh Long</option>
+                                                                            <option value="7a8d7d28-d415-44f2-922c-359139ae9d59">Mỏ Cày</option>
+                                                                            <option value="7d4c0611-74f8-46e2-9f57-0e29001ec487">Mộ Đức</option>
+                                                                            <option value="35e61b83-a41a-40fd-b75a-d070226971c8">Mộc Châu</option>
+                                                                            <option value="925deb6b-63d3-4729-96a5-7d4ac78c2d2b">MỘC HÓA</option>
+                                                                            <option value="708fdf53-cf40-4077-98e6-d2d81cd1ca14">Móng Cái</option>
+                                                                            <option value="ca98a4c3-d762-45f7-9784-fff2ab3a3dc2">Mù Căng Chải</option>
+                                                                            <option value="8b9fa3b6-f32a-4a24-8049-423e8ec47201">Mường Ảng</option>
+                                                                            <option value="b4240db1-ed50-4a7f-8d0a-add5a58df73e">Mường Chà</option>
+                                                                            <option value="648d084f-c80b-4547-9117-9e4dae6f71d8">Mường Khương</option>
+                                                                            <option value="0685dbbc-caa9-4fdf-a3e2-99b06509730d">Mường La</option>
+                                                                            <option value="43de464b-7491-4fdb-a659-f4fc35cd738b">Mường Lát</option>
+                                                                            <option value="bf492a01-94a3-4beb-9b54-3daed9bdcf88">Mường Nhé</option>
+                                                                            <option value="70667015-b63f-4d5a-bf84-bed5291b4a38">Mường Tè</option>
+                                                                            <option value="192c1d21-c598-40ee-9d98-bddad27b7fb7">Mỹ Đức</option>
+                                                                            <option value="5e7c20f7-e7ab-4c7b-b28f-88069c255db7">Mỹ Hào</option>
+                                                                            <option value="85d71af0-712a-460c-9623-8b208a13b965">Mỹ Lộc</option>
+                                                                            <option value="2a4599a9-6421-4aeb-8782-a29670add3ec">Mỹ Tho</option>
+                                                                            <option value="9ede4bf6-24d4-4df7-af1c-e5b535506478">Mỹ Văn</option>
+                                                                            <option value="a4aac30f-5e07-49c2-9112-65f88238fb9a">Nà Hang</option>
+                                                                            <option value="f8f98d80-62bb-4d06-93a0-4f28b4f7d926">Nam Đàn</option>
+                                                                            <option value="595e50dc-5eb0-49ac-ac72-e09e4fddad4b">Nam Đông</option>
+                                                                            <option value="696297f9-f6e7-4010-86eb-fdd6df79c3d6">Nam Giang</option>
+                                                                            <option value="d2f6e104-2234-4045-ac8e-2e8d0c231886">Nậm Nhùn</option>
+                                                                            <option value="49f5e8c4-7066-45ed-bd4e-076253b139ed">Nậm Pồ</option>
+                                                                            <option value="785ad934-b3b8-4b89-9f29-b6473dcdce75">Nam Sách</option>
+                                                                            <option value="63aceb38-40e2-4d07-b82e-8e3103bbf1a0">Nam Trà My</option>
+                                                                            <option value="60001231-72c3-4003-853d-76f3f19c4c46">Nam Trực</option>
+                                                                            <option value="fb2e9a94-b7b0-4599-be84-19ea1c9954ee">Narita</option>
+                                                                            <option value="5642873e-e6f5-471c-adfe-ed0503016fff">Nga Sơn</option>
+                                                                            <option value="a64a0d34-40e5-488f-bf23-4b4b8f70fd88">Nghi Xuân</option>
+                                                                            <option value="d21a26f5-0a57-4a37-9f56-b998c568a3ca">Nghĩa Đàn</option>
+                                                                            <option value="6b27311b-d797-49f2-94ad-4b5c53f12d6a">Nghĩa Hành</option>
+                                                                            <option value="a9229a51-383f-431b-a7d2-1f44ef692ac3">Nghĩa Hưng</option>
+                                                                            <option value="8f7570ff-1020-4737-9962-85c90e1bb055">Ngọc Hiển</option>
+                                                                            <option value="f2e54921-93d8-4cc9-a6ee-0c2c5745667d">Ngọc Hồi</option>
+                                                                            <option value="fabb64a3-264e-46b1-b730-b2442fbf4e39">Ngọc Lặc</option>
+                                                                            <option value="95027c2c-84a4-456d-a165-621403fb920e">Nguyên Bình</option>
+                                                                            <option value="c1261c47-c09d-4a28-8963-889eb35a1008">Nho Quan</option>
+                                                                            <option value="86a4bdd8-6a91-4668-a386-e04e12ce93f5">Như Thanh</option>
+                                                                            <option value="4e118184-5016-4074-995d-69b1cfb09ae7">Như Xuân</option>
+                                                                            <option value="538f25e5-40f5-4259-b4aa-e8cecc105032">Ninh Giang</option>
+                                                                            <option value="19133a96-d100-4748-aba6-c8b160a88fbb">Ninh Hải</option>
+                                                                            <option value="3a3bfd12-9c14-45b1-9031-4230c5b1d376">Ninh Kiều</option>
+                                                                            <option value="e8d289bc-d38d-444e-a473-2fab165790ff">Ninh Phước</option>
+                                                                            <option value="107a0f09-62df-4a63-81c9-3e2a8fb6aa68">Ninh Sơn</option>
+                                                                            <option value="4bf46461-eef8-46a3-ae28-54143964c9a8">Nông Cống</option>
+                                                                            <option value="80878732-563a-44ac-b9e2-e75d45d67ebb">Nông Sơn</option>
+                                                                            <option value="4d269f90-1a50-41b3-be3f-d587e16e5fd0">NÚI THÀNH</option>
+                                                                            <option value="b8c06a4a-34df-4c06-8c15-87116f6ffe04">Ô MÔN</option>
+                                                                            <option value="ce3dc310-2aab-4974-a851-15f1840be83c">Paris</option>
+                                                                            <option value="31c1df08-8b93-447f-a76b-40646c501d03">Patumwan</option>
+                                                                            <option value="b7b4cc76-fc0e-4e34-8adb-ae9968043bcf">PHAN RANG</option>
+                                                                            <option value="3ab03d20-5228-4bd5-a5c3-a0ebec553e34">Phong Điền</option>
+                                                                            <option value="4ed634df-0eb8-400d-89c2-cd3de79822db">Phong Điền</option>
+                                                                            <option value="e1b87270-e92e-4479-a6c6-20fd4787283f">Phong Thổ</option>
+                                                                            <option value="66bd94c0-1a87-421f-abdf-2ccb37ac37b1">Phù Cừ</option>
+                                                                            <option value="c2ac6511-c877-4c67-86ab-4179095737c3">Phú Giáo</option>
+                                                                            <option value="e3747c83-92ae-4c8d-a97e-048fe352b1bc">Phú Hòa</option>
+                                                                            <option value="315410a7-fbf1-4efe-9c41-a874036c5c16">Phú Lộc</option>
+                                                                            <option value="e93015a8-ed9f-4cca-82ed-6d23b8da9f09">Phú Ninh</option>
+                                                                            <option value="9b6988db-9dcb-4395-9002-addfaf28400a">Phù Ninh</option>
+                                                                            <option value="c2333a2e-1953-42f1-a181-2e1af2f48a38">Phù Ninh</option>
+                                                                            <option value="5fb6fbaf-4d8a-46af-9093-4420febf44d6">Phú Quí</option>
+                                                                            <option value="89f8dd6f-85b1-4dc4-9b2b-08e943d68b54">Phú Tân</option>
+                                                                            <option value="aafb8acf-a788-4170-a705-f86082b18bcf">Phú Thiện</option>
+                                                                            <option value="095a713a-e98b-46be-a066-670c8d9bfb4d">Phú Vang</option>
+                                                                            <option value="3f4f7566-0dad-44e9-9570-4a22e999d3d1">Phú Xuyên</option>
+                                                                            <option value="2c51df9d-830c-4c10-88bc-e07c55c39f62">Phù Yên</option>
+                                                                            <option value="2c6a9153-fc9b-44c4-a813-a30c8373e4c2">Phục Hoà</option>
+                                                                            <option value="bccde082-879b-4f38-8bd8-3699c773ef92">Phúc Thọ</option>
+                                                                            <option value="120c2017-9546-40bd-86d5-3557bc3914e5">Phụng Hiệp</option>
+                                                                            <option value="731159ab-428d-4d22-80ba-b9cfa91b8194">PHƯỚC LONG</option>
+                                                                            <option value="80ac9c9c-c3fe-4c4f-811e-61bd6229f9e5">Phước Sơn</option>
+                                                                            <option value="76bf8fa6-cb11-4cdd-8c72-808ddd254783">Pleiku</option>
+                                                                            <option value="399bed80-ae98-433b-a135-ac5c92542938">Quận 1</option>
+                                                                            <option value="406b573f-7104-4985-8123-22313f0d6627">Quận 10</option>
+                                                                            <option value="4e6312a6-49ac-49de-b276-b78a5d1a1ed2">Quận 11</option>
+                                                                            <option value="7cecccf0-a134-4ea8-8712-56b9fe999dbd">Quận 12</option>
+                                                                            <option value="946d6f09-9e8d-491d-bd75-ef6c8345faeb">Quận 2</option>
+                                                                            <option value="74097b51-f661-4367-afe8-6a4fd0b7a900">Quận 3</option>
+                                                                            <option value="a7233e6f-8b0f-47d1-8487-d28b91f221f2">Quận 4</option>
+                                                                            <option value="3c19bd27-ce24-430e-849c-9ac4cebb2a9f">Quận 5</option>
+                                                                            <option value="ed9e7d39-dfb2-495f-bc84-13a1b008eb55">Quận 6</option>
+                                                                            <option value="4324b597-f9f6-40bd-8f76-0067e5ba37ae">Quận 7</option>
+                                                                            <option value="4bde02a9-a5b6-459a-8302-d63e87a862a8">Quận 8</option>
+                                                                            <option value="7907dff2-2c19-493b-bafb-5c98257e382e">Quận 9</option>
+                                                                            <option value="e4213927-b718-4fb2-ab64-f71ec1ba968f">Quản Bạ</option>
+                                                                            <option value="1f5931ed-4c8a-42ed-8032-16bf5a9ace70">Quận Bình Tân</option>
+                                                                            <option value="2ea40f1a-c857-4951-905f-dbe365b50e30">Quận Bình Thạnh</option>
+                                                                            <option value="2270cfb0-91b8-4bab-8315-7cde32fe5702">Quận Cẩm Lệ</option>
+                                                                            <option value="c076d3f1-9d83-4bfc-8ad3-68dd1bbbf928">Quận Đồ Sơn</option>
+                                                                            <option value="be97542c-354b-4550-aee9-bbaf153c7e40">Quận Gò Vấp</option>
+                                                                            <option value="285f4bd3-1618-477f-b131-2f09dba82938">Quận Hải An</option>
+                                                                            <option value="b2c6b82d-d7e2-4509-a6df-0c83a5fa7497">Quận Hải Chân</option>
+                                                                            <option value="241db4a2-6a10-42eb-b5ee-57833cd59ea5">QUẬN HẢI CHÂN</option>
+                                                                            <option value="3d78a7a1-02e0-472f-b0b2-365e2114b3dd">Quận Hải Chân</option>
+                                                                            <option value="450c5549-fc49-4320-bf46-c2199968b24a">Quận Hải Châu</option>
+                                                                            <option value="d907ccfc-bba8-422e-86a4-aaeee9da752b">Quan Hóa</option>
+                                                                            <option value="77cd9f0c-9ddb-4399-9d8d-77df8b5e0163">Quận Hồng Bàng</option>
+                                                                            <option value="93a59c90-87d1-4944-9dde-00a4a8543712">Quận Kiến An</option>
+                                                                            <option value="d78fe97d-a31e-4b30-84f0-c13b33a515f4">Quận Lê Chân</option>
+                                                                            <option value="64f9e15e-2a42-4a69-bed5-ed15d8bd8346">QUẬN LÊ CHÂN</option>
+                                                                            <option value="46d807fa-7de3-4146-b548-9f8a12d2a163">Quận Liên Chiểu</option>
+                                                                            <option value="44e69b38-7450-46a6-87f6-aab41d66c60d">Quận Ngô Quyền</option>
+                                                                            <option value="70aeafd2-c9d6-4d48-a5e0-18ad0b694347">Quận Ngũ Hành Sơn</option>
+                                                                            <option value="a9e2cfbf-55e6-434d-a557-7d70de8a34b9">Quận Phú Nhuận</option>
+                                                                            <option value="6d260a66-aeba-4051-99b8-d3ed7926bbf9">Quan Sơn</option>
+                                                                            <option value="1810df7e-16c5-45c4-a650-e6ebe19fce3e">Quận Tân Bình</option>
+                                                                            <option value="0ffae3db-586f-4c3b-acfd-48ff527021b6">Quận Tân Phú</option>
+                                                                            <option value="02b0a06d-5de2-4923-862b-cafd5626ee20">Quận Thanh Khê</option>
+                                                                            <option value="0e02a59f-1360-46b2-a6a1-a3bac2699d93">QUẬN THANH TRÌ</option>
+                                                                            <option value="b9282608-bcc4-4450-a5b6-6ad1be3fe592">Quận Thủ Đức</option>
+                                                                            <option value="e65c3a75-07f4-440b-a7bd-2307b1fa1b1a">Quang Bình</option>
+                                                                            <option value="1f38b7c9-f39e-400b-9654-4f5b42ebfb47">Quảng Điền</option>
+                                                                            <option value="07a408ea-4481-43e0-a972-686e34cef947">Quảng Ninh</option>
+                                                                            <option value="b7cdc1b8-e638-444c-aee6-81b5baf9d2ea">Quảng Uyên</option>
+                                                                            <option value="46efde34-cfea-41eb-80c6-9303bccae5eb">Quảng Xương</option>
+                                                                            <option value="cba8a75e-31fb-47a8-a4bf-cf45682362d5">Quế Phong</option>
+                                                                            <option value="3b6a4892-8de6-4842-8dc9-90e68666778e">Quế Sơn</option>
+                                                                            <option value="3db3e4f5-6481-4e66-8638-b2313b9552ae">Quốc Oai</option>
+                                                                            <option value="58f6031c-44f7-4c10-9274-e3a0122f91f9">Quỳ Châu</option>
+                                                                            <option value="28cce246-4e83-4f8c-9ccd-604ca45e37ee">Quỳ Hợp</option>
+                                                                            <option value="57e541d0-83d4-405a-a88f-37d89137da59">Quy Nhon</option>
+                                                                            <option value="394743c7-26c6-4964-9460-3ea20a4270f2">Quỳnh Lưu</option>
+                                                                            <option value="a94ebc42-6122-4879-81d7-86d2235aca60">Quỳnh Nhai</option>
+                                                                            <option value="ccc0442c-e787-400b-aab4-83666fba3f48">Quỳnh Phụ</option>
+                                                                            <option value="96335f2c-3f62-4a05-903b-91686e1c9e74">RẠCH GIÁ</option>
+                                                                            <option value="60d69c9f-b27b-4243-8540-144af31e5b61">Rạch Giá</option>
+                                                                            <option value="ca7419d1-d66e-4583-8d80-4866af41dba2">Sa Đét</option>
+                                                                            <option value="7c3a08ac-928f-400c-8155-b9f1dde2fc0a">Sa Thầy</option>
+                                                                            <option value="18ce79db-c586-4889-9dd9-4cd7201f5c3c">San Jose</option>
+                                                                            <option value="54033bf4-5358-43fc-8d5c-e58f1354e2ec">SaPa</option>
+                                                                            <option value="14116316-7ee5-4c47-a2e2-fc53ef6dbfd8">Sendai</option>
+                                                                            <option value="15829099-dce3-46a7-8ecd-185b9fc981ea">Si Ma Cai</option>
+                                                                            <option value="f5bf5ddb-e13c-4d96-bc24-dcce0a5a96cf">Sìn Hồ</option>
+                                                                            <option value="8267295d-6f85-45a1-acef-7b06b2bc9f91">Soc Trang</option>
+                                                                            <option value="f80459f2-8089-4403-b84f-ae226e88cdb2">Sơn Dương</option>
+                                                                            <option value="34c7e317-b06a-469c-aa07-360b635e7dda">Sơn Hà</option>
+                                                                            <option value="788c22b9-efa2-4bab-a6db-c0f7b3bb5976">Sơn Hòa</option>
+                                                                            <option value="aff2d6c0-dc7b-4480-a5c6-b3089fcadbb2">Sơn Tây</option>
+                                                                            <option value="cb0f6c87-bd65-4572-b37a-9b9df84c4d60">Sơn Tây</option>
+                                                                            <option value="0c3cceed-6ff3-4d5e-9633-a6351b770b94">Sơn Tịnh</option>
+                                                                            <option value="d5ec4bc5-67f1-48d6-a0fd-2a1c3372193e">Sông Hinh</option>
+                                                                            <option value="beb8000b-d350-4349-8559-c83ab90f83af">Sông Lô</option>
+                                                                            <option value="21e05b96-c375-4657-b9ec-684e9d4957d7">Sông Mã</option>
+                                                                            <option value="e23833c4-4b9a-4b03-8430-229fbcdcaf26">Sốp Cộp</option>
+                                                                            <option value="90554a5b-b64f-4f3a-9ce9-ef6f8d4e9259">SPRINGVALE</option>
+                                                                            <option value="e691729d-9a2d-4add-aed8-e87b34fea765">ST ALBANS</option>
+                                                                            <option value="7cd7da7e-07df-405d-812a-ec20bd0da4ea">SUNSHINE</option>
+                                                                            <option value="8d5da76b-95ac-4ced-bec9-72ec08876383">Tam Bình</option>
+                                                                            <option value="cb2e7604-847d-4ec9-8c21-3ecffa1e71f9">Tam Đảo</option>
+                                                                            <option value="81a8a752-360a-443a-9ebd-edd9b7a0c92e">Tam Dương</option>
+                                                                            <option value="8ea00293-63bf-4b22-a3b6-f75a3a7f9c66">Tam Đường</option>
+                                                                            <option value="b07c9fde-6716-43ce-97c1-ab05504648ed">Tam Kỳ</option>
+                                                                            <option value="48edc28a-e042-4bb1-850b-ebc326eed895">Tân An</option>
+                                                                            <option value="ae2d0d18-a508-4cda-bfc2-49e151dc826e">Tân Biên</option>
+                                                                            <option value="847c4221-1410-4de4-820f-8810ce20e9b0">TÂN CHÂU</option>
+                                                                            <option value="67962fee-51a5-464f-b7ee-b6e07aa99445">Tân Hiệp</option>
+                                                                            <option value="98b325eb-c6e6-4abb-ada4-7e4d6d50e547">Tân Kỳ</option>
+                                                                            <option value="356078a7-83c3-4970-949f-316d4d188d34">Tân Lạc</option>
+                                                                            <option value="797baa5d-2815-46e0-8d29-e16b5dea5198">Tân Sơn</option>
+                                                                            <option value="18ca37e0-954a-4ff6-b8a2-60a7d6462b45">Tân Thạnh</option>
+                                                                            <option value="073c07ba-6fb3-49c3-b64a-70dee0c5fe22">TÂN TRỤ</option>
+                                                                            <option value="b90571c6-27b0-44a3-a7a7-b2e016aac37f">TÂN UYÊN</option>
+                                                                            <option value="66dd7236-438a-46d8-af2b-3b748956cb81">Tân Uyên</option>
+                                                                            <option value="f831bcbf-ad4b-4f05-a310-7ec7bf1f479b">Tây Giang</option>
+                                                                            <option value="9c4ad5f9-6df5-4949-ad3e-7f801d023f42">Tây Hồ</option>
+                                                                            <option value="88744eb6-721a-4643-b5e8-9422169c5565">Tây Hòa</option>
+                                                                            <option value="93bd05c3-f1ae-4d81-8596-7e3d09b52f01">Tây Trà</option>
+                                                                            <option value="5b9c916b-1468-4cc6-a43e-594e10af9f6d">Thạch An</option>
+                                                                            <option value="3d7209f5-9346-405d-b160-1dc6ee9761c7">Thạch Hà</option>
+                                                                            <option value="e00b2ea7-0bdd-48eb-9fad-c25232c813a1">Thạch Thành</option>
+                                                                            <option value="be1edbe0-4078-482f-9490-227ef6565bc3">Thạch Thất</option>
+                                                                            <option value="ff9acc57-970f-465f-9d0b-dab819f067f7">Thái Thụy</option>
+                                                                            <option value="bb30566c-b756-4663-ab4b-5d2dac0085c0">Than Uyên</option>
+                                                                            <option value="95115e43-e6a8-4704-93af-8735c7714748">Thăng Bình</option>
+                                                                            <option value="b67115fd-df49-4cc1-9b74-35eacfea95e8">Thanh Ba</option>
+                                                                            <option value="e7eaac74-367e-412b-914b-51e620dedec2">Thanh Chương</option>
+                                                                            <option value="730a71ed-1d4c-43e9-b2b4-ea9dba0053bc">Thanh Hà</option>
+                                                                            <option value="53c859c5-7256-46a7-8c0b-615adacb0f63">Thạnh Hóa</option>
+                                                                            <option value="26a25ad3-aee4-49e6-9bcc-11deca0cfe58">Thanh Liêm</option>
+                                                                            <option value="26463184-6f95-4579-83b2-1be282612ee6">Thanh Miện</option>
+                                                                            <option value="76b0fd8e-6150-4c1f-8007-41e1bf605c7e">Thanh Oai</option>
+                                                                            <option value="c39d8812-fbb6-4e12-9f0e-439e55c91975">Thành phố Bảo Lộc</option>
+                                                                            <option value="e02c0e8f-fe95-41ed-9222-c7223cdcf889">Thành phố Cà Mau</option>
+                                                                            <option value="42c14bf9-7c11-4a8b-a27d-51fb4cf1076c">Thành phố Đà Lạt</option>
+                                                                            <option value="7fdbd543-a3c6-43b8-95ea-9b4759b65e4b">Thạnh Phú</option>
+                                                                            <option value="3f594e5c-2b37-42e9-95f8-5008ea8cb5a8">Thanh Sơn</option>
+                                                                            <option value="9f8c2bd3-02d2-41cb-ad5f-1722ecddd158">Thanh Thuỷ</option>
+                                                                            <option value="071dbe09-a5c4-4a24-b971-da6654aecae0">Thanh Xuân</option>
+                                                                            <option value="7152f67e-d79d-4ff9-9e3a-b4a3efb1f6e3">Tháp Chàm</option>
+                                                                            <option value="470a4675-b968-4d2d-acb2-6b1dfb76dba5">Tháp Mười</option>
+                                                                            <option value="9b64dcc1-c6c9-4240-82a3-f825d0c61bbe">THỊ TRẤN LÁI THIÊU</option>
+                                                                            <option value="93855c72-4df6-4aa5-8abd-5c746cfa6b13">THỊ TRẤN NĂM CĂN</option>
+                                                                            <option value="e80c6115-f5e2-4391-809c-f9e7c8a0c4ab">THỊ TRẤN TÂN PHÚ</option>
+                                                                            <option value="61020318-e9b5-4fea-a903-7d7676315bde">Thị xã Ayun Pa</option>
+                                                                            <option value="598ed3d2-6e23-42cb-a1c3-da503789702e">Thị xã Ba Đồn</option>
+                                                                            <option value="cb448d94-a0be-4c4c-bc20-3b7c7d7896e2">Thị xã Bà Rịa</option>
+                                                                            <option value="77b615b0-5797-463f-b9b7-49a92ec686e2">Thị xã Bắc Cạn</option>
+                                                                            <option value="620c1893-f766-4da9-a447-db106b198cec">Thị xã Bạc Liêu</option>
+                                                                            <option value="27d3477e-6b14-4cbe-9af7-6c49ee8eb6f1">Thị xã Bến Tre</option>
+                                                                            <option value="729aa672-dc5e-41bd-9199-5379c5d0c08c">Thị xã Bỉm Sơn</option>
+                                                                            <option value="eea37296-755c-4d6d-8108-a92e0a664f77">Thị Xã Buôn Hồ</option>
+                                                                            <option value="3cd6e7bb-4e3e-4605-a2ff-58760ae3b951">Thị xã Cai Lậy</option>
+                                                                            <option value="c15f203a-5741-4997-8a07-c2899dcd07b9">Thị xã Đông Triều</option>
+                                                                            <option value="32f06be9-5e69-4414-b1ab-48579c0d2786">Thị xã Đức Trọng</option>
+                                                                            <option value="eef4cd9f-1307-4bd9-92b1-54a0c0c983ae">Thị xã Gia Nghĩa</option>
+                                                                            <option value="5cfe1e94-3e74-4020-82fe-8fda7592e9a7">Thị xã Gia Nghĩa</option>
+                                                                            <option value="35d96470-44a2-4b75-9870-1290e82326cc">THỊ XÃ GÒ CÔNG</option>
+                                                                            <option value="12043f9b-c5c7-4707-acc4-7873e21fdd4d">THỊ XÃ HÀ TIÊN</option>
+                                                                            <option value="491936de-8ebd-4d67-bf6f-d942b33262c7">Thị xã Hồng Lĩnh</option>
+                                                                            <option value="4b8442bb-e6a2-46d1-8a15-f01e38a17bab">Thị xã Kỳ Anh</option>
+                                                                            <option value="21cd6c59-8657-4816-ba3f-4cde36521bd6">Thị xã La Gi</option>
+                                                                            <option value="b84bdf42-47c6-4023-adb5-4fd8bf8551bf">Thị xã Long Khánh</option>
+                                                                            <option value="997f6490-579b-49e8-93a5-b1dc04b3a7fe">Thị xã Long Mỹ</option>
+                                                                            <option value="9d46efc2-f701-42a8-b27f-87816f43b5c0">Thị Xã Mường Lay</option>
+                                                                            <option value="e42aa927-f956-40f3-922e-8415dba1d046">Thị xã Ngã Bảy</option>
+                                                                            <option value="869f624d-7b2a-43f0-baca-65178df4dc7b">Thị xã Ngã Năm</option>
+                                                                            <option value="a2fe79a0-cb70-401a-897f-18b31529e34c">Thị xã Nghĩa Lộ</option>
+                                                                            <option value="1e466ba8-6410-46c5-9911-f3adff68a48a">Thị xã Phú Thọ</option>
+                                                                            <option value="ad8f827b-617d-4567-9d69-6ba5961c94da">Thị xã Phúc Yên</option>
+                                                                            <option value="25e538bd-9742-4d73-a3e6-104b6ee8ca42">Thị xã Quảng Trị</option>
+                                                                            <option value="85d871fe-1189-4b07-b854-f205a8c2deef">Thị xã Quảng Yên</option>
+                                                                            <option value="49d50913-8eed-4050-9bc9-be5b457efe89">Thị xã Sầm Sơn</option>
+                                                                            <option value="97b8d37d-250e-4d8b-a9e4-73de52327d82">THỊ XÃ TÂY NINH</option>
+                                                                            <option value="4522675d-d818-4d4c-a5fc-942421d86b34">Thị xã Thái Hoà</option>
+                                                                            <option value="ba629be5-c4ef-4274-b303-28201f80d255">Thị xã Trà Vinh</option>
+                                                                            <option value="f52ea382-38a7-40d1-a8f4-5797bfdabd65">Thiệu Hóa</option>
+                                                                            <option value="a059d9bf-d945-4b35-8896-c202ba4535df">Thọ Xuân</option>
+                                                                            <option value="f58ce87d-98f7-456e-9000-fb1ede8bafff">THỐNG NHẤT</option>
+                                                                            <option value="f77b48c0-1b9c-4443-b161-ffff83139716">Thông Nông</option>
+                                                                            <option value="302f312f-5be6-4199-b227-af4d7a59c1c4">THỐT NỐT</option>
+                                                                            <option value="fccc72ec-a710-4c50-a8aa-55790b142cd8">Thủ Dầu Một</option>
+                                                                            <option value="adc7bf7a-2d89-427a-85ad-d3b3a4ea62e4">Thủ Thừa</option>
+                                                                            <option value="507bab87-916d-4975-9070-57497693b8c1">Thuận An</option>
+                                                                            <option value="38889bf9-27e7-4876-bd22-7271347f7562">Thuận An</option>
+                                                                            <option value="b34be526-3d35-4daf-a50c-fc0222c0ea0a">Thuận Bắc</option>
+                                                                            <option value="78ed9697-9e9a-4107-8962-6c8d9b083c6e">Thuận Châu</option>
+                                                                            <option value="931dd687-74e0-4e0e-a2f5-f1ce36b3eab6">Thuận Nam</option>
+                                                                            <option value="1170ce67-d2b4-4dc3-8f2e-e3151ac120bb">Thường Tín</option>
+                                                                            <option value="fd9f26ef-cd05-4dfd-ac77-251940e99b20">Thường Xuân</option>
+                                                                            <option value="1ebd4534-67f5-4a9e-8ade-84fb0a0910e6">Tiền Hải</option>
+                                                                            <option value="e2dcff9e-647f-408c-8ac9-93907540be8e">Tiên Lữ</option>
+                                                                            <option value="5fe00d21-168a-4ade-b970-3782087fd1bc">Tiên Phước</option>
+                                                                            <option value="eb0c6583-61e1-4c25-a945-303b4e48f0c0">Tiên Yên</option>
+                                                                            <option value="8774fa40-0805-48c5-a871-ca55085f5e31">Tĩnh Gia</option>
+                                                                            <option value="48b24339-6d8d-49c8-af2e-e382b11cf28a">TP ĐIỆN BIÊN</option>
+                                                                            <option value="4717b729-baa5-4b46-9db5-1c2f764fccb5">TP Đồng Hới</option>
+                                                                            <option value="0e6c1dac-f5dc-4821-a4c1-e8dc4ae4af39">TP Hà Giang</option>
+                                                                            <option value="d382c093-70c0-47ee-a9d7-6b58847d42d6">TP Hạ Long</option>
+                                                                            <option value="1f101b15-2045-4d49-a989-aed1b087e4e7">TP HÀ TĨNH</option>
+                                                                            <option value="865d9684-9be2-4d48-b8f5-3de71120836b">TP Hue</option>
+                                                                            <option value="85178242-bf3a-496b-bd3f-dade0c0ac40d">TP HƯNG YÊN</option>
+                                                                            <option value="8ee28da7-7562-4d83-bad7-39688fffb221">TP NAM ĐỊNH</option>
+                                                                            <option value="c3b957c6-0379-4c16-88ff-c13f9ce162eb">TP QUẢNG NGÃI</option>
+                                                                            <option value="aad06712-f65c-4861-acd0-ae16a308f76d">TP TÂN AN</option>
+                                                                            <option value="58af5c81-d7b2-429a-a580-2d27f1f487b9">Tp Thanh Hóa</option>
+                                                                            <option value="10019734-4ab4-4ea6-8149-e237c79a11fa">TP Vị Thanh</option>
+                                                                            <option value="269ea75e-a9b9-4fab-af26-9b159529146d">Tp Vinh</option>
+                                                                            <option value="5fe578dc-2c43-4ff0-8dcf-36600e298ee7">Tp Vĩnh Long</option>
+                                                                            <option value="7ab9e8a8-5c79-4b61-a519-7dbaa0aad175">TP. BUÔN MÊ THUỘC</option>
+                                                                            <option value="63a41e06-48bd-40ba-80b7-92e0e2f2da09">TP. CẦN THƠ</option>
+                                                                            <option value="58411a6e-aca0-4078-ac16-a9d4d7eef7e1">TP. NHA TRANG</option>
+                                                                            <option value="61c3d066-0e23-41e2-940f-67aa93a9cc3f">TP. PHAN THIẾT</option>
+                                                                            <option value="ac19a626-9f5a-494d-9f04-39d0dd84cae0">TP. VIỆT TRÌ</option>
+                                                                            <option value="a594be2c-c72e-4d2f-8d7a-3f0206354054">Tp.Bắc Ninh</option>
+                                                                            <option value="31a20100-211f-4cbe-af9d-b6cebc98a58c">Tp.Cam Ranh</option>
+                                                                            <option value="838777a8-8a29-4a44-bda7-8013e4c297b0">Tp.Cao Bằng</option>
+                                                                            <option value="442776bd-f543-421b-ae40-0f4084db9c1b">TP.Châu Đốc</option>
+                                                                            <option value="2ad2755b-41ec-4f0b-9aad-86c6e02426ea">Tp.Hòa Bình</option>
+                                                                            <option value="311da329-1516-4001-8e28-0c1cd2d250e5">Tp.Kom Tum</option>
+                                                                            <option value="b36b5022-d774-4e7a-b7ab-23d70f464b55">Tp.Lạng Sơn</option>
+                                                                            <option value="398fad62-edb0-4fb0-9a99-b099c7fdd2d4">TP.Lào Cai</option>
+                                                                            <option value="e0e1610e-aa60-410c-b5c9-cb1db5f363fa">TP.Long Xuyên</option>
+                                                                            <option value="9e1bafb0-8870-45cf-bce3-ff1de5e41b8d">Tp.Ninh Bình</option>
+                                                                            <option value="75bfa03d-0c73-4662-a9ff-d794f5279c34">Tp.Phủ Lý</option>
+                                                                            <option value="f4db7096-7101-4b57-9351-8dd221c8786c">Tp.Sơn La</option>
+                                                                            <option value="29cb4d73-8f78-4e0e-81f6-4917d483dca3">Tp.Sông Công</option>
+                                                                            <option value="97b39fdf-1db1-4c79-87ac-6576cca4ed18">Tp.Tam Điệp</option>
+                                                                            <option value="2ebff0dc-4ba7-40af-8919-0086d8f15ade">Tp.Thái Bình</option>
+                                                                            <option value="528e8213-8dc1-41f2-bc12-1dac85d3650e">TP.Thái Nguyên</option>
+                                                                            <option value="187ace03-792a-4845-ae1f-7bb9d8b2cbf2">Tp.Yên Bái</option>
+                                                                            <option value="8bc95e4e-b753-484e-9575-d71ab7cf5f61">Trà Bồng</option>
+                                                                            <option value="91c9aec2-c1c0-4aad-bb49-e4c5e052ef2b">TRÀ CÚ</option>
+                                                                            <option value="64d3d6d7-c35b-4904-913d-311bcfb791d8">Trà Lĩnh</option>
+                                                                            <option value="a6e1809e-d50d-4348-8418-b7b6fa9c772d">Trà Nóc</option>
+                                                                            <option value="40e6d08b-51c5-405e-84d6-9599a0c9195e">TRÀ ÔN</option>
+                                                                            <option value="dc533611-075b-4258-a2eb-df219c7d14b4">Trạm Tấu</option>
+                                                                            <option value="b9293826-7705-464b-acd8-f67254a7b91a">Trấn Yên</option>
+                                                                            <option value="10062e82-54d9-4d54-a715-29cb9d05d903">Trảng Bom</option>
+                                                                            <option value="6a98b3d2-69fb-422c-96e2-425c1cc4a329">Tràng Định</option>
+                                                                            <option value="61e39f5b-444d-48ac-be3a-250b1f068cc0">Triệu Phong</option>
+                                                                            <option value="26b113ce-3331-4969-ab7f-4a6fe32affc6">Triệu Sơn</option>
+                                                                            <option value="0454e746-cc97-46d6-b87d-ac0801d197ac">Trực Ninh</option>
+                                                                            <option value="ed28992e-467b-42cd-9e85-d0b62fe833d0">Trùng Khánh</option>
+                                                                            <option value="595a2e20-57cc-44d6-9265-3aef60800264">Trường Sa</option>
+                                                                            <option value="9c92ae16-2f2b-4d6a-83b6-7cbc4f5539f0">Tứ Kỳ</option>
+                                                                            <option value="46918cca-a11d-45c4-8493-dcaf8e121a06">Từ Liêm</option>
+                                                                            <option value="f7c22268-3b08-454f-bf7d-7829c4ab1ffa">Tu Mơ Rông</option>
+                                                                            <option value="36563759-eda6-4665-9e7d-9adee2db10ef">Tư Nghĩa</option>
+                                                                            <option value="58c99524-aea8-4034-8f9a-618c70cfefd9">Tủa Chùa</option>
+                                                                            <option value="87ba2b9d-cd09-488c-b6be-487ea8e7348f">Tuần Giáo</option>
+                                                                            <option value="7757ae2e-c37d-49a8-8317-6901c7bbe56b">Tương Dương</option>
+                                                                            <option value="c423f3a2-cb29-4ae7-a7e8-d99c01ff6ed2">TUY AN</option>
+                                                                            <option value="6ad880a2-fa15-4548-8f20-12fc6844a9e3">Tuy Đức</option>
+                                                                            <option value="bf8010bf-7753-4215-8ef9-0dc2a8d8cd92">TUY HÒA</option>
+                                                                            <option value="7da876a5-0631-4b12-ba76-6b54a8174cd1">Tuyên Hóa</option>
+                                                                            <option value="216b1d3a-56b0-4b1b-b437-d7ee648a3034">Tuyên Hóa</option>
+                                                                            <option value="ac2da688-1ec0-4759-bf40-c43e191dbcc3">TX LAI CHÂU</option>
+                                                                            <option value="c97e2433-14c9-41a3-9536-e1947364eb43">TX TUYEN QUANG</option>
+                                                                            <option value="af6181f9-c51d-46a1-a096-96e5d69dc5da">TX. AN KHÊ</option>
+                                                                            <option value="1de71c35-96c0-474d-a274-f68433739e29">U Minh</option>
+                                                                            <option value="641c784b-ffe2-457d-a9e8-d32b8d64c50f">U Minh Thượng</option>
+                                                                            <option value="c2350599-91ca-4074-80a1-9dfea31ac406">Ứng Hòa</option>
+                                                                            <option value="ca26c74e-7937-4dc4-af39-f6efe2ac1c25">Văn Bàn</option>
+                                                                            <option value="53b2684f-c5cd-4f92-baad-1b3d917e232c">Văn Chấn</option>
+                                                                            <option value="8ad97df3-8787-4866-aee1-da1cd3c24604">Vân Đồn</option>
+                                                                            <option value="e17202bb-d07c-4489-89f6-478979c9e444">Vân Hồ</option>
+                                                                            <option value="f2d867f2-0de4-47b7-aaf3-9dabec2eeef1">Văn Lãng</option>
+                                                                            <option value="8d2035a9-382d-47e9-903e-34d91c858f3f">VẠN NINH</option>
+                                                                            <option value="ec7eaa20-ac19-41b8-812c-996af0bf4981">Văn Quan</option>
+                                                                            <option value="46c546ab-ed39-4d8f-8888-c33ecaa61bd1">Văn Yên</option>
+                                                                            <option value="08262344-eca1-4f63-af10-1142d4b8f5b2">Vị Xuyên</option>
+                                                                            <option value="1c4626ee-dc54-4e2a-9b60-6aea9d8e0976">VIỄN CHÂU</option>
+                                                                            <option value="7ece41c2-52a4-423a-a5da-2e614a65cb58">Vĩnh Bảo</option>
+                                                                            <option value="5bda9630-f806-4773-9887-17848f2403b7">Vĩnh Châu</option>
+                                                                            <option value="8ccc19af-7c2a-4e01-bad4-61643fab6f4f">Vĩnh Linh</option>
+                                                                            <option value="26407026-c0e0-4d29-985a-41344dfbeb6f">Vĩnh Lộc</option>
+                                                                            <option value="6e3493de-9bf3-4b6c-8919-f21a251b3f7e">Vĩnh Thạnh</option>
+                                                                            <option value="29bee42e-008b-43e9-8cb5-c6966a86844e">Vĩnh Tường</option>
+                                                                            <option value="4e097fbd-38be-447c-be3b-d2352a55a6f8">VĨNH TƯỜNG</option>
+                                                                            <option value="f0c89cb8-3319-462e-ab6d-3a727734350d">Vĩnh Yên</option>
+                                                                            <option value="04a01a30-f32b-4aa5-bd5b-a81f8db357ce">Vụ Bản</option>
+                                                                            <option value="34ace091-512f-497a-9610-f408ee394cda">Vũ Quang</option>
+                                                                            <option value="792d0f85-f51d-4ec8-8243-76996fa74662">Vũ Thư</option>
+                                                                            <option value="179fbcbc-f24d-4fc0-91b2-18018b7bf34f">Vung Tau</option>
+                                                                            <option value="6cf8e771-c89c-492f-bec3-c4a8233d6ccd">Westminter</option>
+                                                                            <option value="ac7d14e1-fa3c-4b00-bfcf-5667c247508b">Xín Mần</option>
+                                                                            <option value="29dde1e4-094c-407b-a4ea-3d882be5bc82">XUÂN LỘC</option>
+                                                                            <option value="841a6849-3524-4958-a040-1cbd50dec2ae">Xuân Tây</option>
+                                                                            <option value="b9c074ba-0a07-484f-b26f-2c1dc8b7bfa3">Xuân Trường</option>
+                                                                            <option value="57ab11f2-3c4e-4102-8264-8ecb162a0025">Ý Yên</option>
+                                                                            <option value="7e21c22c-bb02-439c-9592-14b9d3f0f1d7">Yên Bình</option>
+                                                                            <option value="e45c21f2-70a3-4756-9b0b-092d38a2904a">Yên Châu</option>
+                                                                            <option value="87cc5ea3-5ba4-4ad0-919a-44e4b1a4e466">Yên Định</option>
+                                                                            <option value="8e9c7bd4-db8d-433b-aa45-a617b42490bc">Yên Khánh</option>
+                                                                            <option value="2b391156-95d6-4182-b816-35f546d22b9e">Yên Lạc</option>
+                                                                            <option value="ac10a1c1-2fd0-4638-8fc8-11621d70ee5f">Yên Lập</option>
+                                                                            <option value="99567686-c37e-46af-8de0-ddfa44339bc3">Yên Minh</option>
+                                                                            <option value="e5bc8caa-5878-431d-8c6a-e039faf06cb5">Yên Mô</option>
+                                                                            <option value="63e7057a-481b-44e5-ac44-bfe312a08400">Yên Mỹ</option>
+                                                                            <option value="f42a27fe-3602-4ab0-a685-b44dcf169bed">Yên Sơn</option>
+                                                                            <option value="caec2127-bae5-404c-8d1a-4f64833f07cb">Yên Thành</option>
+                                                                            <option value="64395be0-56ac-42df-b750-eefc549c3a21">Yên Thủy</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <button class="btn btn-sm btn-secondary edit-form-submit" onclick="ChangeAddress()">
+                                                                Xong
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row setting-item">
+                                        <div class="col-md-3 col-12 setting-label">Giới tính</div>
+                                        <div class="col-md-9 col-12">
+                                            <div class="row">
+                                                <div class="col-12 col-md-12">
+                                                    <div class="display-form">
+                                                        <div class="display-form-content">
+                                                            <p>@Html.DisplayFor(Model => Model.Sex)</p>
+                                                        </div>
+                                                        <a class="fw-bold text-underline toggle-edit-form">Chỉnh sửa</a>
+                                                    </div>
+                                                    <div class="edit-form">
+                                                        <div class="edit-form-wrapper">
+                                                            <div class="form-group">
+                                                                <label>Giới tính</label>
+                                                                <select class="form-select" id="Gender" aria-label="Default select example">
+                                                                    <option selected="">Chọn giới tính</option>
+                                                                    <option value="0">Nam</option>
+                                                                    <option value="1">Nữ</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <button class="btn btn-sm btn-secondary edit-form-submit" onclick="ChangeGender()">
+                                                                Xong
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-3 my-auto right mx-auto text-center d-none">
+                                        <div class="mb-3 profile-picture mx-auto">
+                                            <a href="#">
+                                                <img src="../../images/mock-avatar.png" class="circle w-100">
+                                            </a>
+                                        </div>
+                                        <div class="file btn btn-outline-secondary mb-3">
+                                            Chọn ảnh
+                                            <input type="file" name="file">
+                                        </div>
+                                        <div class="text-center">
+                                            Dung lượng file tối da 1 MB <br>Định dạng: .JPEG, .PNG
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Lấy tất cả các phần tử HTML của button chỉnh sửa và form chỉnh sửa
+            var editButtons = document.querySelectorAll('.toggle-edit-form');
+            var editForms = document.querySelectorAll('.edit-form');
+            var editing = false;
+
+            // Lắng nghe sự kiện click cho mỗi button chỉnh sửa
+            editButtons.forEach(function (editButton, index) {
+                // Lắng nghe sự kiện click vào button chỉnh sửa
+                editButton.addEventListener('click', function () {
+                    var editForm = editForms[index];
+                    if (!editing) {
+                        // Thêm lớp active cho form chỉnh sửa để hiển thị
+                        editForm.classList.add('active');
+                        // Đổi nội dung của button thành "Hủy"
+                        editButton.textContent = 'Hủy';
+                        editing = true;
+                    } else {
+                        // Xóa lớp active khỏi form chỉnh sửa để ẩn đi
+                        editForm.classList.remove('active');
+                        // Đổi nội dung của button thành "Chỉnh sửa"
+                        editButton.textContent = 'Chỉnh sửa';
+                        editing = false;
+                    }
+                });
+            });
+        </script>
+
+    </main>
+}
+<div>
+</div>

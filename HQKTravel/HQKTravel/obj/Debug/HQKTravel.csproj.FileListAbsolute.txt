@@ -1,0 +1,498 @@
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\HQKTravel.dll.config
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\HQKTravel.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\HQKTravel.pdb
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\csc.exe
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\csc.exe.config
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\csc.rsp
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\csi.exe
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\csi.exe.config
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\csi.rsp
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.AppContext.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Collections.Immutable.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Console.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Globalization.Calendars.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.IO.Compression.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.IO.FileSystem.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Net.Http.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Net.Sockets.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Reflection.Metadata.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.ValueTuple.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XPath.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\vbc.exe
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\vbc.exe.config
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\vbc.rsp
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\VBCSCompiler.exe
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\roslyn\VBCSCompiler.exe.config
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\Antlr3.Runtime.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\Microsoft.Web.Infrastructure.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\Newtonsoft.Json.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.Helpers.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.Mvc.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.Optimization.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.Razor.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.WebPages.Deployment.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.WebPages.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.WebPages.Razor.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\WebGrease.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.Helpers.xml
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.Mvc.xml
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.Optimization.xml
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.Razor.xml
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.WebPages.xml
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.WebPages.Deployment.xml
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\System.Web.WebPages.Razor.xml
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\Newtonsoft.Json.xml
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\Antlr3.Runtime.pdb
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TravelHKQ\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.AssemblyReference.cache
+D:\TravelHKQ\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.CoreCompileInputs.cache
+D:\TravelHKQ\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.CopyComplete
+D:\TravelHKQ\HQKTravel\HQKTravel\obj\Debug\HQKTravel.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\obj\Debug\HQKTravel.pdb
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\PagedList.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\PagedList.Mvc.dll
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\PagedList.xml
+D:\TravelHKQ\HQKTravel\HQKTravel\bin\PagedList.Mvc.xml
+C:\halamhung_2011065167\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.AssemblyReference.cache
+C:\halamhung_2011065167\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.CoreCompileInputs.cache
+C:\halamhung_2011065167\HQKTravel\HQKTravel\obj\Debug\HQKTravel.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\obj\Debug\HQKTravel.pdb
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\HQKTravel.dll.config
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\HQKTravel.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\HQKTravel.pdb
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\csc.exe
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\csc.exe.config
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\csc.rsp
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\csi.exe
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\csi.exe.config
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\csi.rsp
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Managed.Core.targets
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.AppContext.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Collections.Immutable.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Console.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Globalization.Calendars.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.IO.Compression.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.IO.FileSystem.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Net.Http.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Net.Sockets.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Reflection.Metadata.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.ValueTuple.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XmlDocument.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XPath.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\vbc.exe
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\vbc.exe.config
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\vbc.rsp
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\VBCSCompiler.exe
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\roslyn\VBCSCompiler.exe.config
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\Antlr3.Runtime.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\Microsoft.Web.Infrastructure.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\Newtonsoft.Json.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\PagedList.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\PagedList.Mvc.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.Helpers.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.Mvc.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.Optimization.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.Razor.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.WebPages.Deployment.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.WebPages.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.WebPages.Razor.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\WebGrease.dll
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\PagedList.xml
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\PagedList.Mvc.xml
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.Helpers.xml
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.Mvc.xml
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.Optimization.xml
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.Razor.xml
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.WebPages.xml
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.WebPages.Deployment.xml
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\System.Web.WebPages.Razor.xml
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\Newtonsoft.Json.xml
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\Antlr3.Runtime.pdb
+C:\halamhung_2011065167\HQKTravel\HQKTravel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\halamhung_2011065167\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.CopyComplete
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\HQKTravel.dll.config
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\HQKTravel.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\HQKTravel.pdb
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csc.exe
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csc.exe.config
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csc.rsp
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csi.exe
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csi.exe.config
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csi.rsp
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.AppContext.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Collections.Immutable.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Console.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Globalization.Calendars.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.IO.Compression.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.IO.FileSystem.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Net.Http.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Net.Sockets.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Reflection.Metadata.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.ValueTuple.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XPath.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\vbc.exe
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\vbc.exe.config
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\vbc.rsp
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\VBCSCompiler.exe
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\VBCSCompiler.exe.config
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\Antlr3.Runtime.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\Microsoft.Web.Infrastructure.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\Newtonsoft.Json.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\PagedList.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\PagedList.Mvc.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Helpers.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Mvc.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Optimization.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Razor.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.Deployment.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.Razor.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\WebGrease.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\PagedList.xml
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\PagedList.Mvc.xml
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Helpers.xml
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Mvc.xml
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Optimization.xml
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Razor.xml
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.xml
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.Deployment.xml
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.Razor.xml
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\Newtonsoft.Json.xml
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\Antlr3.Runtime.pdb
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.AssemblyReference.cache
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.CoreCompileInputs.cache
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.CopyComplete
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.dll
+D:\TravelHKQ\moi\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.pdb
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\HQKTravel.dll.config
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\HQKTravel.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\HQKTravel.pdb
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csc.exe
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csc.exe.config
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csc.rsp
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csi.exe
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csi.exe.config
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csi.rsp
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.AppContext.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Collections.Immutable.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Console.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Globalization.Calendars.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.IO.Compression.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.IO.FileSystem.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Net.Http.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Net.Sockets.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Reflection.Metadata.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.ValueTuple.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XPath.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\vbc.exe
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\vbc.exe.config
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\vbc.rsp
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\VBCSCompiler.exe
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\VBCSCompiler.exe.config
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\Antlr3.Runtime.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\Microsoft.Web.Infrastructure.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\Newtonsoft.Json.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\PagedList.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\PagedList.Mvc.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Helpers.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Mvc.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Optimization.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Razor.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.Deployment.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.Razor.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\WebGrease.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\PagedList.xml
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\PagedList.Mvc.xml
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Helpers.xml
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Mvc.xml
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Optimization.xml
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Razor.xml
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.xml
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.Deployment.xml
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.Razor.xml
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\Newtonsoft.Json.xml
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\Antlr3.Runtime.pdb
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.AssemblyReference.cache
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.CoreCompileInputs.cache
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.CopyComplete
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.dll
+D:\Document\DACS\moi\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.pdb
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\HQKTravel.dll.config
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\HQKTravel.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\HQKTravel.pdb
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csc.exe
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csc.exe.config
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csc.rsp
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csi.exe
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csi.exe.config
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\csi.rsp
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.AppContext.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Console.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.IO.Compression.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Net.Http.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Net.Sockets.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.ValueTuple.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XPath.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\vbc.exe
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\vbc.exe.config
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\vbc.rsp
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\VBCSCompiler.exe
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\Antlr3.Runtime.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\Newtonsoft.Json.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\PagedList.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\PagedList.Mvc.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Helpers.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Mvc.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Optimization.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Razor.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.Deployment.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.Razor.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\WebGrease.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\PagedList.xml
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\PagedList.Mvc.xml
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Helpers.xml
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Mvc.xml
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Optimization.xml
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.Razor.xml
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.xml
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.Deployment.xml
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\System.Web.WebPages.Razor.xml
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\Newtonsoft.Json.xml
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\Antlr3.Runtime.pdb
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.CopyComplete
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.dll
+C:\Users\PC\Documents\Zalo Received Files\HQKTravel\HQKTravel\HQKTravel\obj\Debug\HQKTravel.pdb
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\HQKTravel.dll.config
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\HQKTravel.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\HQKTravel.pdb
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\csc.exe
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\csc.exe.config
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\csc.rsp
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\csi.exe
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\csi.exe.config
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\csi.rsp
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.AppContext.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Collections.Immutable.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Console.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Globalization.Calendars.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.IO.Compression.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.IO.FileSystem.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Net.Http.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Net.Sockets.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Reflection.Metadata.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.ValueTuple.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XPath.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\vbc.exe
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\vbc.exe.config
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\vbc.rsp
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\VBCSCompiler.exe
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\roslyn\VBCSCompiler.exe.config
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\Antlr3.Runtime.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\Microsoft.Web.Infrastructure.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\Newtonsoft.Json.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\PagedList.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\PagedList.Mvc.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.Helpers.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.Mvc.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.Optimization.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.Razor.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.WebPages.Deployment.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.WebPages.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.WebPages.Razor.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\WebGrease.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\PagedList.xml
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\PagedList.Mvc.xml
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.Helpers.xml
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.Mvc.xml
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.Optimization.xml
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.Razor.xml
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.WebPages.xml
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.WebPages.Deployment.xml
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\System.Web.WebPages.Razor.xml
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\Newtonsoft.Json.xml
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\Antlr3.Runtime.pdb
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.AssemblyReference.cache
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.CoreCompileInputs.cache
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\obj\Debug\HQKTravel.csproj.CopyComplete
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\obj\Debug\HQKTravel.dll
+D:\TravelHKQ\HKQ145\HQKTravel\HQKTravel\obj\Debug\HQKTravel.pdb
