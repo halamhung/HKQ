@@ -176,7 +176,7 @@ namespace HQKTravel.Controllers
                 guest.fullName = FULLNAME;
                 guest.user_name = USER;
                 guest.Email = EMAIL;
-                guest.pass_word = mahoamd5(PASSWORD); ;
+                guest.pass_word = mahoamd5(PASSWORD); 
                 guest.Birthday = DateTime.Parse(BIRTHDAY);
                 guest.Sex = SEX;
                 guest.Phone = PHONE;
