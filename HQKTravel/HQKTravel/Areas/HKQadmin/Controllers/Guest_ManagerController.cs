@@ -7,7 +7,7 @@ using System.Web.Mvc;
 using PagedList;
 namespace HQKTravel.Areas.HKQadmin.Controllers
 {
-    public class Guest_ManagerController : Controller
+    public class Guest_ManagerController : BaseController
     {
 
         // GET: HKQadmin/Guest_Manager

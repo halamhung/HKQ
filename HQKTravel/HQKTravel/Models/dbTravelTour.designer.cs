@@ -30,9 +30,6 @@ namespace HQKTravel.Models
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void Insertadmin(admin instance);
-    partial void Updateadmin(admin instance);
-    partial void Deleteadmin(admin instance);
     partial void InsertBill(Bill instance);
     partial void UpdateBill(Bill instance);
     partial void DeleteBill(Bill instance);
@@ -84,13 +81,16 @@ namespace HQKTravel.Models
     partial void InsertTour_Type(Tour_Type instance);
     partial void UpdateTour_Type(Tour_Type instance);
     partial void DeleteTour_Type(Tour_Type instance);
+    partial void Insertadmin(admin instance);
+    partial void Updateadmin(admin instance);
+    partial void Deleteadmin(admin instance);
     partial void InsertGuest_with_Account(Guest_with_Account instance);
     partial void UpdateGuest_with_Account(Guest_with_Account instance);
     partial void DeleteGuest_with_Account(Guest_with_Account instance);
         #endregion
 
         public dbTravelTourDataContext() :
-                base(global::System.Configuration.ConfigurationManager.ConnectionStrings["HKQTravelingWebsite2ConnectionString1"].ConnectionString, mappingSource)
+                base(global::System.Configuration.ConfigurationManager.ConnectionStrings["HKQTravelingWebsite2ConnectionString2"].ConnectionString, mappingSource)
         {
             OnCreated();
         }
@@ -111,14 +111,6 @@ namespace HQKTravel.Models
 				base(connection, mappingSource)
 		{
 			OnCreated();
-		}
-		
-		public System.Data.Linq.Table<admin> admins
-		{
-			get
-			{
-				return this.GetTable<admin>();
-			}
 		}
 		
 		public System.Data.Linq.Table<Bill> Bills
@@ -257,193 +249,19 @@ namespace HQKTravel.Models
 			}
 		}
 		
+		public System.Data.Linq.Table<admin> admins
+		{
+			get
+			{
+				return this.GetTable<admin>();
+			}
+		}
+		
 		public System.Data.Linq.Table<Guest_with_Account> Guest_with_Accounts
 		{
 			get
 			{
 				return this.GetTable<Guest_with_Account>();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.admin")]
-	public partial class admin : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private long _id_admin;
-		
-		private string _user_name;
-		
-		private string _pass_word;
-		
-		private string _fullName;
-		
-		private System.Nullable<int> _status;
-		
-		private string _Email;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void Onid_adminChanging(long value);
-    partial void Onid_adminChanged();
-    partial void Onuser_nameChanging(string value);
-    partial void Onuser_nameChanged();
-    partial void Onpass_wordChanging(string value);
-    partial void Onpass_wordChanged();
-    partial void OnfullNameChanging(string value);
-    partial void OnfullNameChanged();
-    partial void OnstatusChanging(System.Nullable<int> value);
-    partial void OnstatusChanged();
-    partial void OnEmailChanging(string value);
-    partial void OnEmailChanged();
-    #endregion
-		
-		public admin()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_admin", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public long id_admin
-		{
-			get
-			{
-				return this._id_admin;
-			}
-			set
-			{
-				if ((this._id_admin != value))
-				{
-					this.Onid_adminChanging(value);
-					this.SendPropertyChanging();
-					this._id_admin = value;
-					this.SendPropertyChanged("id_admin");
-					this.Onid_adminChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_user_name", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string user_name
-		{
-			get
-			{
-				return this._user_name;
-			}
-			set
-			{
-				if ((this._user_name != value))
-				{
-					this.Onuser_nameChanging(value);
-					this.SendPropertyChanging();
-					this._user_name = value;
-					this.SendPropertyChanged("user_name");
-					this.Onuser_nameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_pass_word", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
-		public string pass_word
-		{
-			get
-			{
-				return this._pass_word;
-			}
-			set
-			{
-				if ((this._pass_word != value))
-				{
-					this.Onpass_wordChanging(value);
-					this.SendPropertyChanging();
-					this._pass_word = value;
-					this.SendPropertyChanged("pass_word");
-					this.Onpass_wordChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fullName", DbType="NVarChar(50)")]
-		public string fullName
-		{
-			get
-			{
-				return this._fullName;
-			}
-			set
-			{
-				if ((this._fullName != value))
-				{
-					this.OnfullNameChanging(value);
-					this.SendPropertyChanging();
-					this._fullName = value;
-					this.SendPropertyChanged("fullName");
-					this.OnfullNameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_status", DbType="Int")]
-		public System.Nullable<int> status
-		{
-			get
-			{
-				return this._status;
-			}
-			set
-			{
-				if ((this._status != value))
-				{
-					this.OnstatusChanging(value);
-					this.SendPropertyChanging();
-					this._status = value;
-					this.SendPropertyChanged("status");
-					this.OnstatusChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Email", DbType="VarChar(100)")]
-		public string Email
-		{
-			get
-			{
-				return this._Email;
-			}
-			set
-			{
-				if ((this._Email != value))
-				{
-					this.OnEmailChanging(value);
-					this.SendPropertyChanging();
-					this._Email = value;
-					this.SendPropertyChanged("Email");
-					this.OnEmailChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -5083,6 +4901,188 @@ namespace HQKTravel.Models
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.admin")]
+	public partial class admin : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private long _id_admin;
+		
+		private string _user_admin;
+		
+		private string _pass_word;
+		
+		private string _fullName;
+		
+		private System.Nullable<int> _status;
+		
+		private string _Email;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onid_adminChanging(long value);
+    partial void Onid_adminChanged();
+    partial void Onuser_adminChanging(string value);
+    partial void Onuser_adminChanged();
+    partial void Onpass_wordChanging(string value);
+    partial void Onpass_wordChanged();
+    partial void OnfullNameChanging(string value);
+    partial void OnfullNameChanged();
+    partial void OnstatusChanging(System.Nullable<int> value);
+    partial void OnstatusChanged();
+    partial void OnEmailChanging(string value);
+    partial void OnEmailChanged();
+    #endregion
+		
+		public admin()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_admin", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public long id_admin
+		{
+			get
+			{
+				return this._id_admin;
+			}
+			set
+			{
+				if ((this._id_admin != value))
+				{
+					this.Onid_adminChanging(value);
+					this.SendPropertyChanging();
+					this._id_admin = value;
+					this.SendPropertyChanged("id_admin");
+					this.Onid_adminChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_user_admin", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string user_admin
+		{
+			get
+			{
+				return this._user_admin;
+			}
+			set
+			{
+				if ((this._user_admin != value))
+				{
+					this.Onuser_adminChanging(value);
+					this.SendPropertyChanging();
+					this._user_admin = value;
+					this.SendPropertyChanged("user_admin");
+					this.Onuser_adminChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_pass_word", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string pass_word
+		{
+			get
+			{
+				return this._pass_word;
+			}
+			set
+			{
+				if ((this._pass_word != value))
+				{
+					this.Onpass_wordChanging(value);
+					this.SendPropertyChanging();
+					this._pass_word = value;
+					this.SendPropertyChanged("pass_word");
+					this.Onpass_wordChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fullName", DbType="NVarChar(50)")]
+		public string fullName
+		{
+			get
+			{
+				return this._fullName;
+			}
+			set
+			{
+				if ((this._fullName != value))
+				{
+					this.OnfullNameChanging(value);
+					this.SendPropertyChanging();
+					this._fullName = value;
+					this.SendPropertyChanged("fullName");
+					this.OnfullNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_status", DbType="Int")]
+		public System.Nullable<int> status
+		{
+			get
+			{
+				return this._status;
+			}
+			set
+			{
+				if ((this._status != value))
+				{
+					this.OnstatusChanging(value);
+					this.SendPropertyChanging();
+					this._status = value;
+					this.SendPropertyChanged("status");
+					this.OnstatusChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Email", DbType="VarChar(100)")]
+		public string Email
+		{
+			get
+			{
+				return this._Email;
+			}
+			set
+			{
+				if ((this._Email != value))
+				{
+					this.OnEmailChanging(value);
+					this.SendPropertyChanging();
+					this._Email = value;
+					this.SendPropertyChanged("Email");
+					this.OnEmailChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Guest_with_Account")]
 	public partial class Guest_with_Account : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -5091,7 +5091,7 @@ namespace HQKTravel.Models
 		
 		private long _id_guest_with_account;
 		
-		private string _user_name;
+		private string _user_guest;
 		
 		private string _pass_word;
 		
@@ -5123,8 +5123,8 @@ namespace HQKTravel.Models
     partial void OnCreated();
     partial void Onid_guest_with_accountChanging(long value);
     partial void Onid_guest_with_accountChanged();
-    partial void Onuser_nameChanging(string value);
-    partial void Onuser_nameChanged();
+    partial void Onuser_guestChanging(string value);
+    partial void Onuser_guestChanged();
     partial void Onpass_wordChanging(string value);
     partial void Onpass_wordChanged();
     partial void OnfullNameChanging(string value);
@@ -5175,22 +5175,22 @@ namespace HQKTravel.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_user_name", DbType="VarChar(50)")]
-		public string user_name
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_user_guest", DbType="VarChar(50)")]
+		public string user_guest
 		{
 			get
 			{
-				return this._user_name;
+				return this._user_guest;
 			}
 			set
 			{
-				if ((this._user_name != value))
+				if ((this._user_guest != value))
 				{
-					this.Onuser_nameChanging(value);
+					this.Onuser_guestChanging(value);
 					this.SendPropertyChanging();
-					this._user_name = value;
-					this.SendPropertyChanged("user_name");
-					this.Onuser_nameChanged();
+					this._user_guest = value;
+					this.SendPropertyChanged("user_guest");
+					this.Onuser_guestChanged();
 				}
 			}
 		}

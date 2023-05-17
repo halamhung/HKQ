@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace HQKTravel.Areas.HKQadmin.Controllers
 {
-    public class Flight_ManagerController : Controller
+    public class Flight_ManagerController : BaseController
     {
         // GET: HKQadmin/Flight_Manager
         dbTravelTourDataContext data = new dbTravelTourDataContext();

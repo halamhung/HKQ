@@ -46,7 +46,7 @@ namespace HQKTravel.Controllers
         // check tk tồn tại chưa-hùng-27/4
         private bool checktk(string tk)
         {
-            return data.Guest_with_Accounts.Count(x => x.user_name == tk) > 0;
+            return data.Guest_with_Accounts.Count(x => x.user_guest == tk) > 0;
         }
 
 
@@ -174,7 +174,7 @@ namespace HQKTravel.Controllers
             else
             {
                 guest.fullName = FULLNAME;
-                guest.user_name = USER;
+                guest.user_guest = USER;
                 guest.Email = EMAIL;
                 guest.pass_word = mahoamd5(PASSWORD); 
                 guest.Birthday = DateTime.Parse(BIRTHDAY);
@@ -230,7 +230,7 @@ namespace HQKTravel.Controllers
             }
             else
             {
-                var guest = data.Guest_with_Accounts.FirstOrDefault(p => p.user_name == user && p.pass_word == pass);
+                var guest = data.Guest_with_Accounts.FirstOrDefault(p => p.user_guest == user && p.pass_word == pass);
                 if (guest != null)
                 {
                     ViewBag.thongbao = "đăng nhập thành công";

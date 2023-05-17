@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace HQKTravel.Areas.HKQadmin.Controllers
 {
-    public class HistoryBill_ManagerController : Controller
+    public class HistoryBill_ManagerController : BaseController
     {
         // GET: HKQadmin/HistoryBill_Manager
         dbTravelTourDataContext data = new dbTravelTourDataContext();

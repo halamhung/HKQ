@@ -15,9 +15,14 @@ namespace HQKTravel.Areas.HKQadmin
         public override void RegisterArea(AreaRegistrationContext context) 
         {
             context.MapRoute(
-               "HKQadmin_Dangnhap",
-               "HKQadmin/Dangnhap",
+               "HKQadmin_Login",
+               "HKQadmin/Login",
                new { Controller ="Auth", action = "Login", id = UrlParameter.Optional }
+           );
+            context.MapRoute(
+               "HKQadmin_Logout",
+               "HKQadmin/Logout",
+               new { Controller = "Auth", action = "Logout", id = UrlParameter.Optional }
            );
 
             context.MapRoute(

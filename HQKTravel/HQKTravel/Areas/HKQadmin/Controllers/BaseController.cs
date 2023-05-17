@@ -11,10 +11,12 @@ namespace HQKTravel.Areas.HKQadmin.Controllers
         // GET: HKQadmin/Base
         public BaseController()
         {
-            if (System.Web.HttpContext.Current.Session["admin"].Equals(""))
-            {
-                System.Web.HttpContext.Current.Response.Redirect("~/HKQadmin/Dangnhap");
-            }
+            ////tạo ra 1 hàm constructer bắt mọi trang admin đều phải đăng nhập
+            //if (System.Web.HttpContext.Current.Session["user_admin"].Equals(""))
+            //{
+            //    //return Redirect("~/HKQadmin/Login"); Lớp này không thể trả về bằng cách này 
+            //    System.Web.HttpContext.Current.Response.Redirect("~/HKQadmin/Login");
+            //}
         }
 
     }

@@ -21,7 +21,7 @@ namespace HQKTravel.Areas.HKQadmin.Controllers
         public ActionResult Login(string taikhoan , string matkhau)
         {
             string erro = null;
-            admin ad = data.admins.Where(p=>p.user_name == taikhoan && p.pass_word == matkhau).FirstOrDefault();
+            admin ad = data.admins.Where(p=>p.user_admin == taikhoan && p.pass_word == matkhau).FirstOrDefault();
             if(ad == null)
             {
                 erro = "sai bét rồi bạn ơi!";
@@ -29,7 +29,9 @@ namespace HQKTravel.Areas.HKQadmin.Controllers
             else
             {
                 Session["fullName"] = ad.fullName;
-                RedirectToAction("","");
+                Session["user_admin"] = taikhoan;
+                Session["id_admin"] = ad.id_admin;
+            return RedirectToAction("Index","DashBoard");
             }
             ViewBag.Error = erro;
 
@@ -39,8 +41,9 @@ namespace HQKTravel.Areas.HKQadmin.Controllers
         [HttpGet]        
         public ActionResult Logout()
         {
-            Session["admin"] = null;
-            return RedirectToAction("");
+            Session["user_admin"] = null;
+            Session["id_admin"] = null;
+            return Redirect("~/HKQadmin/Login");
         }
 
     }

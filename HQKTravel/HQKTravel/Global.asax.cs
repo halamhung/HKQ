@@ -19,7 +19,9 @@ namespace HQKTravel
         }
         protected void Session_start()
         {
-            Session["user_name"] = ""; //superadmin
+            Session["id_admin"] = "";
+            Session["user_admin"] = ""; //superadmin
+            Session["user_guest"] = "";
 
         }
     }

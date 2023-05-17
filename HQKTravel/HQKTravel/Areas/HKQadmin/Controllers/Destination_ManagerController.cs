@@ -7,7 +7,7 @@ using HQKTravel.Models;
 using PagedList;
 namespace HQKTravel.Areas.HKQadmin.Controllers
 {
-    public class Destination_ManagerController : Controller
+    public class Destination_ManagerController : BaseController
     {
         // GET: HKQadmin/Destination_Manager
         dbTravelTourDataContext data = new dbTravelTourDataContext(); 
