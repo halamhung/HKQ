@@ -17,5 +17,10 @@ namespace HQKTravel
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        protected void Session_start()
+        {
+            Session["user_name"] = ""; //superadmin
+
+        }
     }
 }

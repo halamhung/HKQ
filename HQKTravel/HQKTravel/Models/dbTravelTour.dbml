@@ -239,6 +239,7 @@
       <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="Date_Create" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="Date_Update" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Guest_with_Account_Booking_Tour" Member="Booking_Tours" ThisKey="id_guest_with_account" OtherKey="id_guest_with_account" Type="Booking_Tour" />
     </Type>
   </Table>

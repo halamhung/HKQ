@@ -1,0 +1,52 @@
+﻿@model IEnumerable<HQKTravel.Models.Discount>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/HKQadmin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name_discount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.value_calculate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.begin_discount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.end_discount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name_discount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.value_calculate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.begin_discount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.end_discount)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_Discount }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_Discount }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_Discount })
+        </td>
+    </tr>
+}
+
+</table>

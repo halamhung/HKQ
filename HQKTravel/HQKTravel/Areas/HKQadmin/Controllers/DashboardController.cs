@@ -6,11 +6,12 @@ using System.Web.Mvc;
 
 namespace HQKTravel.Areas.HKQadmin.Controllers
 {
-    public class AdminController : BaseController
+    public class DashboardController : Controller
     {
         // GET: HKQadmin/Admin
         public ActionResult Index()
         {
+           
             return View();
         }
     }

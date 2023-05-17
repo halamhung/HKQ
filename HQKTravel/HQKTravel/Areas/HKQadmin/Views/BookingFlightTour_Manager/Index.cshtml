@@ -1,0 +1,40 @@
+﻿@model IEnumerable<HQKTravel.Models.BookingFlightTour>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/HKQadmin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_Tour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_Flight)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_Tour)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_Flight)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_BookingFlightTour }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_BookingFlightTour }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_BookingFlightTour })
+        </td>
+    </tr>
+}
+
+</table>

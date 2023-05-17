@@ -23,7 +23,7 @@ namespace HQKTravel.Areas.HKQadmin
             context.MapRoute(
                 "HKQadmin_default",
                 "HKQadmin/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new { Controller="Dashboard", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

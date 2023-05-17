@@ -1,0 +1,58 @@
+﻿@model IEnumerable<HQKTravel.Models.Room>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/HKQadmin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Amenities)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Num_Room)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descriptions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_Hotel)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Amenities)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Num_Room)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descriptions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_Hotel)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_Room }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_Room }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_Room })
+        </td>
+    </tr>
+}
+
+</table>

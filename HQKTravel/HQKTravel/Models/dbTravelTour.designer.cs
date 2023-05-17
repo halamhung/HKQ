@@ -90,7 +90,7 @@ namespace HQKTravel.Models
         #endregion
 
         public dbTravelTourDataContext() :
-                base(global::System.Configuration.ConfigurationManager.ConnectionStrings["HKQTravelingWebsite2ConnectionString"].ConnectionString, mappingSource)
+                base(global::System.Configuration.ConfigurationManager.ConnectionStrings["HKQTravelingWebsite2ConnectionString1"].ConnectionString, mappingSource)
         {
             OnCreated();
         }
@@ -5113,6 +5113,8 @@ namespace HQKTravel.Models
 		
 		private System.Nullable<System.DateTime> _Date_Update;
 		
+		private System.Nullable<int> _Status;
+		
 		private EntitySet<Booking_Tour> _Booking_Tours;
 		
     #region Extensibility Method Definitions
@@ -5143,6 +5145,8 @@ namespace HQKTravel.Models
     partial void OnDate_CreateChanged();
     partial void OnDate_UpdateChanging(System.Nullable<System.DateTime> value);
     partial void OnDate_UpdateChanged();
+    partial void OnStatusChanging(System.Nullable<int> value);
+    partial void OnStatusChanged();
     #endregion
 		
 		public Guest_with_Account()
@@ -5387,6 +5391,26 @@ namespace HQKTravel.Models
 					this._Date_Update = value;
 					this.SendPropertyChanged("Date_Update");
 					this.OnDate_UpdateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="Int")]
+		public System.Nullable<int> Status
+		{
+			get
+			{
+				return this._Status;
+			}
+			set
+			{
+				if ((this._Status != value))
+				{
+					this.OnStatusChanging(value);
+					this.SendPropertyChanging();
+					this._Status = value;
+					this.SendPropertyChanged("Status");
+					this.OnStatusChanged();
 				}
 			}
 		}

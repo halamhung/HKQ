@@ -1,0 +1,76 @@
+﻿@model IEnumerable<HQKTravel.Models.Bill>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/HKQadmin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_BookingFlightTour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_BookingIndividual)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_BookingHotelTour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_BookingTour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_Staff)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.total_Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bill_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date_Create)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_BookingFlightTour)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_BookingIndividual)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_BookingHotelTour)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_BookingTour)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_Staff)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.total_Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bill_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date_Create)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_Bill }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_Bill }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_Bill })
+        </td>
+    </tr>
+}
+
+</table>
