@@ -8,7 +8,7 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- font-awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -102,63 +102,111 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="@Url.Action("","QLkhachhang")" class="nav-link">
+                                    <a href="@Url.Action("","Bill_Manager")" class="nav-link">
+                                        <i class="fas fa-receipt nav-icon"></i>
+                                        <p>Quản lý hóa đơn</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","Booking_Manager")" class="nav-link">
+                                        <i class="fas fa-map-marked-alt nav-icon"></i>
+                                        <p>Quản lý đặt tour</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","BookingFlightTour_Manager")" class="nav-link">
+                                        <i class="fas fa-plane nav-icon"></i>
+                                        <p>Quản lý đặt máy bay</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","BookingHotelTour_Manager")" class="nav-link">
+                                        <i class="fas fa-hotel nav-icon"></i>
+                                        <p>Quản lý đặt phòng</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","BookingInvidual_Manager")" class="nav-link">
+                                        <i class="fas fa-user nav-icon"></i>
+                                        <p>Quản lý booking invidual</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","CTBooking_ManagerController")" class="nav-link">
+                                        <i class="fas fa-solid fa-info nav-icon"></i>
+                                        <p>Chi tiết phiếu đặt tour</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","CTService_Manager")" class="nav-link">
+                                        <i class="fas fa-solid fa-info nav-icon"></i>
+                                        <p>Chi tiết dịch vụ</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","Destination_Manager")" class="nav-link">
+                                        <i class="fas fa-location-arrow nav-icon"></i>
+                                        <p>Quản lý điểm đến</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","Discount_Manager")" class="nav-link">
+                                        <i class="fas fa-solid fa-percent nav-icon"></i>
+                                        <p>Quản lý mã giảm giá</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","Flight_Manager")" class="nav-link">
+                                        <i class="fas fa-sharp fa-solid fa-plane-departure nav-icon"></i>
+                                        <p>Quản lý chuyến bay</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","Guest_Manager")" class="nav-link">
                                         <i class="fas fa-user nav-icon"></i>
                                         <p>Quản lý khách hàng</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="@Url.Action("","QLnhanvien")" class="nav-link">
+                                    <a href="@Url.Action("","HistoryBill_Manager")" class="nav-link">
+                                        <i class="fas fa-solid fa-clock nav-icon"></i>
+                                        <p>Lịch sử hóa đơn</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","Hotel_Manager")" class="nav-link">
+                                        <i class="fas fa-user nav-icon"></i>
+                                        <p>Quản lý khách sạn</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","Room_Manager")" class="nav-link">
+                                        <i class="fas fa-user nav-icon"></i>
+                                        <p>Quản lý phòng</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","Service_Manager")" class="nav-link">
+                                        <i class="fas fa-user nav-icon"></i>
+                                        <p>danh sách dịch vụ</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("","Staff_Manager")" class="nav-link">
                                         <i class="fas fa-user nav-icon"></i>
                                         <p>Quản lý nhân viên</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="@Url.Action("","QLdiadiem")" class="nav-link">
+                                    <a href="@Url.Action("","Tour_Manager")" class="nav-link">
                                         <i class="fas fa-user nav-icon"></i>
-                                        <p>Quản lý địa điểm</p>
+                                        <p>Quản lý danh sách tour</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="@Url.Action("","QLloaitour")" class="nav-link">
+                                    <a href="@Url.Action("","TourType_Manager")" class="nav-link">
                                         <i class="fas fa-user nav-icon"></i>
                                         <p>Quản lý loại tour</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="@Url.Action("","QLdichvu")" class="nav-link">
-                                        <i class="fas fa-user nav-icon"></i>
-                                        <p>Quản lý dịch vụ</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="@Url.Action("","QLdichvu")" class="nav-link">
-                                        <i class="fas fa-user nav-icon"></i>
-                                        <p>Quản lý dịch vụ</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="@Url.Action("DS_T","QLtour")" class="nav-link">
-                                        <i class="fas fa-user nav-icon"></i>
-                                        <p>Quản lý tour</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="@Url.Action("DS_CTT","QLchitiettour")" class="nav-link">
-                                        <i class="fas fa-user nav-icon"></i>
-                                        <p>Quản lý chi tiết tour</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="@Url.Action("DS_PDT","QLphieudattour")" class="nav-link">
-                                        <i class="fas fa-user nav-icon"></i>
-                                        <p>Quản lý phiếu đặt tour</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="@Url.Action("DS_CTDV","QLchitietdichvu")" class="nav-link">
-                                        <i class="fas fa-user nav-icon"></i>
-                                        <p>Quản lý chi tiết dịch vụ</p>
                                     </a>
                                 </li>
                             </ul>
@@ -183,6 +231,7 @@
                             </a>
                         </li>
                     </ul>
+
                 </nav>
                 <!-- /.sidebar-menu -->
             </div>

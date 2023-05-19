@@ -1,100 +1,93 @@
-﻿@model IEnumerable<HQKTravel.Models.Guest_with_Account>
-
+﻿@using PagedList.Mvc;
+@using HQKTravel.Models;
+@model  PagedList.PagedList<HQKTravel.Models.Guest_with_Account>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Areas/HKQadmin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Index</h2>
+<section class="content">
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.user_name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.pass_word)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.fullName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Phone)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Birthday)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Address)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Sex)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Image)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Date_Create)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Date_Update)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Status)
-        </th>
-        <th></th>
-    </tr>
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-6">
+                    <strong class="text-danger">
+                        DANH SÁCH KHÁCH HÀNG
+                    </strong>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a href="@Url.Action("Create","Guest_Manager")" class="btn btn-sm btn-success">Thêm</a>
+                    <a href="@Url.Action("","")" class="btn btn-sm btn-danger">Thùng rác</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <tr>
+                    <th>#</th>
+                    <th>Id</th>
+                    <th>Họ tên</th>
+                    <th>Email</th>
+                    <th>Giới tính</th>
+                    <th>Ngày sinh</th>
+                    <th>Số điện thoại</th>
+                    <th>Địa chỉ</th>
+                    <th>Ảnh khách</th>
+                    <th>Ngày tạo</th>
+                    <th>Ngày cập nhật</th>
+                    <th>Chức năng</th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-center"><input type="checkbox" /></td>
+                        <td class="text-center">@item.id_guest_with_account</td>
+                        <td>@item.fullName</td>
+                        <td>@item.Email</td>
+                        <td class="text-center">@item.Sex</td>
+                        <td>@item.Birthday</td>
+                        <td>@item.Phone</td>
+                        <td>@item.Address</td>
+                        <td><img style="width:120px" src="@Url.Content("~/dbHinhKH/"+item.Image)" /></td>
+                        <td>@item.Date_Create</td>
+                        <td>@item.Date_Update</td>
+                        <td class="text-center">
+                            @if (item.Status == 1)
+                            {
+                                <a href="@Url.Action("Status","Guest_Manager",new { id = item.id_guest_with_account })" class="btn btn-sm btn-success"><i class="fas fa-toggle-on"></i></a>
+                            }
+                            else
+                            {
+                                <a href="@Url.Action("Status","Guest_Manager",new { id = item.id_guest_with_account })" class="btn btn-sm btn-danger"><i class="fas fa-toggle-off"></i></a>
+                            }
+                            <a href="@Url.Action("Edit","Guest_Manager",new { id = item.id_guest_with_account })" class="btn btn-sm btn-success">Sửa</a>
+                            <a href="@Url.Action("Details","Guest_Manager",new { id = item.id_guest_with_account })" class="btn btn-sm btn-info">Chi tiết</a>
+                            <a href="@Url.Action("Delete","Guest_Manager",new { id = item.id_guest_with_account })" class="btn btn-sm btn-danger">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </table>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.user_name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.pass_word)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.fullName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Phone)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Birthday)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Address)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Sex)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Image)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Date_Create)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Date_Update)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Status)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id_guest_with_account }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id_guest_with_account }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id_guest_with_account })
-        </td>
-    </tr>
-}
+        </div>
+        <div class="card-footer">
+            Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount;
+            <div class="MenuTrang">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+            </div>
+            <style>
+                .MenuTrang li {
+                    display: inline;
+                }
 
-</table>
+                    .MenuTrang li a {
+                        color: black;
+                        float: left;
+                        padding: 8px 16px;
+                        text-decoration: none;
+                    }
+            </style>
+        </div>
+    </div>
+</section>

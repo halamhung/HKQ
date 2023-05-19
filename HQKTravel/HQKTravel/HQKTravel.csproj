@@ -374,6 +374,8 @@
     <Content Include="Areas\HKQadmin\Views\Bill_Manager\Index.cshtml" />
     <Content Include="Areas\HKQadmin\Views\HistoryBill_Manager\Index.cshtml" />
     <Content Include="Areas\HKQadmin\Views\Staff_Manager\Index.cshtml" />
+    <Content Include="Areas\HKQadmin\Views\Booking_Manager\Index.cshtml" />
+    <Content Include="Areas\HKQadmin\Views\CTBooking_Manager\Index.cshtml" />
     <None Include="Models\dbTravelTour.dbml.layout">
       <DependentUpon>dbTravelTour.dbml</DependentUpon>
     </None>
